@@ -1,0 +1,16 @@
+SUGAR CODE IT ADMIN SETUP
+
+1. Upload/extract all files into public_html.
+2. In cPanel, open Directory Privacy.
+3. Select the public_html/admin folder.
+4. Turn on password protection for that folder.
+5. Create your private admin username and password there.
+6. Visit https://sugar-code-it.com/admin/ and log in.
+
+IMPORTANT
+- Do not put your admin password in HTML, JavaScript, PHP, or this text file.
+- The public calendar is read-only. Events are managed from /admin/.
+- Uploaded photos are managed from /admin/ and can be assigned to About, Meetings, Projects, or Impact.
+- The data folder is blocked from direct web access by .htaccess.
+- The uploads folder blocks executable script extensions.
+- If PHP cannot save events or photos, use cPanel File Manager to make sure data/ and uploads/ are writable by your hosting account. Normal permissions are usually 755 for folders and 644 for files.

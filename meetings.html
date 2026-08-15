@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <title>
+   Meetings | Sugar Code It
+  </title>
+  <link href="/styles.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <header class="nav">
+   <div class="container navin">
+    <a class="brand" href="/index.html">
+     <img alt="Sugar Code It logo" src="/assets/logo.png"/>
+     <span>
+      Sugar Code It
+     </span>
+    </a>
+    <button aria-label="Open navigation" class="menu">
+     Menu
+    </button>
+    <nav class="links">
+     <a href="/index.html">
+      Home
+     </a>
+     <a href="/about.html">
+      About
+     </a>
+     <a href="/meetings.html">
+      Meetings
+     </a>
+     <a href="/calendar.html">
+      Calendar
+     </a>
+     <a href="/learn.html">
+      Learn
+     </a>
+     <a href="/projects.html">
+      Projects
+     </a>
+     <a href="/impact.html">
+      Impact
+     </a>
+     <a href="/roadmap.html">
+      Road Map
+     </a>
+     <a href="/join.html">
+      Join
+     </a>
+    </nav>
+   </div>
+  </header>
+  <main>
+    <div class="breadcrumb-wrap">
+      <nav class="breadcrumb container" aria-label="Breadcrumb">
+        <a href="/index.html">Home</a>
+        <span class="breadcrumb-separator">/</span>
+        <span aria-current="page">Meetings</span>
+      </nav>
+    </div>
+
+   <section class="page-hero">
+    <div class="container">
+     <span class="eyebrow">
+      Meetings
+     </span>
+     <h1>
+      Show up. Learn something. Build something.
+     </h1>
+     <p>
+      Regular meetings are designed around a short skill lesson followed by hands-on work, team activities or project development.
+     </p>
+    </div>
+   </section>
+   <section>
+    <div class="container grid3">
+     <div class="card">
+      <h3>
+       When
+      </h3>
+      <p>
+       Every other Thursday
+       <br/>
+       <strong style="color:white">
+        3:00-4:00 PM
+       </strong>
+      </p>
+     </div>
+     <div class="card">
+      <h3>
+       Where
+      </h3>
+      <p>
+       Clements High School
+       <br/>
+       <strong style="color:white">
+        Room 2102
+       </strong>
+      </p>
+     </div>
+     <div class="card">
+      <h3>
+       Sponsor
+      </h3>
+      <p>
+       Club sponsor
+       <br/>
+       <strong style="color:white">
+        Ms. Holm
+       </strong>
+      </p>
+     </div>
+    </div>
+   </section>
+   <section>
+    <div class="container">
+     <div class="section-head">
+      <div>
+       <span class="eyebrow">
+        Meeting format
+       </span>
+       <h2>
+        One hour, used well.
+       </h2>
+      </div>
+     </div>
+     <div class="grid3">
+      <div class="card">
+       <div class="metric">
+        10m
+       </div>
+       <h3>
+        Kickoff
+       </h3>
+       <p>
+        Announcements, goals and a quick overview of the day's technical idea.
+       </p>
+      </div>
+      <div class="card">
+       <div class="metric">
+        20m
+       </div>
+       <h3>
+        Learn
+       </h3>
+       <p>
+        A focused lesson or live demonstration in coding, circuitry or engineering.
+       </p>
+      </div>
+      <div class="card">
+       <div class="metric">
+        30m
+       </div>
+       <h3>
+        Build
+       </h3>
+       <p>
+        Hands-on activity, challenge or dedicated project-team work.
+       </p>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section>
+    <div class="container">
+     <div class="gallery">
+      <img alt="Hands-on club activity" src="/assets/meeting-1.jpg"/>
+      <img alt="Club meeting" src="/assets/meeting-2.jpg"/>
+      <img alt="Students with a completed project" src="/assets/meeting-3.jpg"/>
+     </div>
+    </div>
+   </section>
+
+    <section id="meeting-updates-section" style="display:none">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Meeting updates</span>
+            <h2>Latest meeting information.</h2>
+          </div>
+        </div>
+        <div class="grid2">
+          <div class="card" id="meeting-content-card" style="display:none">
+            <h3>Meeting update</h3>
+            <p id="meeting-content-text" style="white-space:pre-wrap"></p>
+          </div>
+          <div class="card" id="meeting-minutes-card" style="display:none">
+            <h3>Meeting minutes</h3>
+            <p id="meeting-minutes-text" style="white-space:pre-wrap"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Photos</span>
+            <h2>Meeting photos.</h2>
+          </div>
+        </div>
+        <div class="public-photo-grid" data-photo-section="meetings"></div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+   <div class="container footer-grid">
+    <div>
+     <strong style="color:white">
+      Sugar Code It
+     </strong>
+     <br/>
+     Clements High School | Sugar Land, Texas
+    </div>
+    <div>
+     Arduino | Electrical | Biomedical | Engineering
+    </div>
+    <div>
+     chssugarcodeit@gmail.com
+    </div>
+   </div>
+  </footer>
+  <script src="/script.js">
+  </script>
+  <script>
+   fetch('/api/meeting-content.php', { cache: 'no-store' })
+    .then(function(response) {
+     return response.ok ? response.json() : {};
+    })
+    .then(function(data) {
+     var content = typeof data.content === 'string' ? data.content.trim() : '';
+     var minutes = typeof data.minutes === 'string' ? data.minutes.trim() : '';
+
+     if (!content && !minutes) {
+      return;
+     }
+
+     document.getElementById('meeting-updates-section').style.display = '';
+
+     if (content) {
+      document.getElementById('meeting-content-text').textContent = content;
+      document.getElementById('meeting-content-card').style.display = '';
+     }
+
+     if (minutes) {
+      document.getElementById('meeting-minutes-text').textContent = minutes;
+      document.getElementById('meeting-minutes-card').style.display = '';
+     }
+    })
+    .catch(function() {});
+  </script>
+ </body>
+</html>
+

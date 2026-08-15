@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calendar | Sugar Code It</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="container navin">
+      <a class="brand" href="/index.html">
+        <img src="/assets/logo.png" alt="Sugar Code It logo">
+        <span>Sugar Code It</span>
+      </a>
+      <button class="menu" aria-label="Open navigation" aria-expanded="false">Menu</button>
+      <nav class="links">
+        <a href="/index.html">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/meetings.html">Meetings</a>
+        <a href="/calendar.html">Calendar</a>
+        <a href="/learn.html">Learn</a>
+        <a href="/projects.html">Projects</a>
+        <a href="/impact.html">Impact</a>
+        <a href="/roadmap.html">Road Map</a>
+        <a href="/join.html">Join</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="breadcrumb-wrap">
+      <nav class="breadcrumb container" aria-label="Breadcrumb">
+        <a href="/index.html">Home</a>
+        <span class="breadcrumb-separator">/</span>
+        <span aria-current="page">Calendar</span>
+      </nav>
+    </div>
+
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow">2026-27 calendar</span>
+        <h1>Club calendar.</h1>
+        <p>Move month by month to see meetings, workshops, project deadlines and club events.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="calendar-toolbar">
+          <button class="button secondary" id="prevMonth" type="button">Previous</button>
+          <h2 id="calendarTitle">August 2026</h2>
+          <button class="button secondary" id="nextMonth" type="button">Next</button>
+        </div>
+        <div class="month-calendar" id="monthCalendar" aria-live="polite"></div>
+        <p class="storage-note">Calendar events are maintained by the Sugar Code It website admin.</p>
+      </div>
+    </section>
+  </main>
+
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div><strong style="color:white">Sugar Code It</strong><br>Clements High School | Sugar Land, Texas</div>
+      <div>Arduino | Electrical | Biomedical | Engineering</div>
+      <div>chssugarcodeit@gmail.com</div>
+    </div>
+  </footer>
+  <script src="/script.js"></script>
+</body>
+</html>
