@@ -1,0 +1,19 @@
+{
+  "periods": {
+    "2022-2024": {
+      "title": "Impact from 2022 to 2024",
+      "summary": "Use the admin page to add a summary for this period.",
+      "details": "Add the activities, projects, outreach, achievements, and other impact you want to document for 2022 to 2024."
+    },
+    "2024-2026": {
+      "title": "Impact from 2024 to 2026",
+      "summary": "Use the admin page to add a summary for this period.",
+      "details": "Add the activities, projects, outreach, achievements, and other impact you want to document for 2024 to 2026."
+    },
+    "2026-2028": {
+      "title": "Impact from 2026 to 2028",
+      "summary": "Use the admin page to add a summary for this period.",
+      "details": "Add the activities, projects, outreach, achievements, and other impact you want to document for 2026 to 2028."
+    }
+  }
+}
