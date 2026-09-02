@@ -5,15 +5,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Projects | Sugar Code It</title>
   <link rel="stylesheet" href="/styles.css">
+
+  <style>
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    @media (max-width: 800px) {
+      .projects-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
+
 <body>
+
   <header class="nav">
     <div class="container navin">
+
       <a class="brand" href="/index.html">
         <img src="/assets/logo.png" alt="Sugar Code It logo">
         <span>Sugar Code It</span>
       </a>
-      <button class="menu" aria-label="Open navigation" aria-expanded="false">Menu</button>
+
+      <button
+        class="menu"
+        aria-label="Open navigation"
+        aria-expanded="false"
+      >
+        Menu
+      </button>
+
       <nav class="links">
         <a href="/index.html">Home</a>
         <a href="/about.html">About</a>
@@ -25,51 +50,201 @@
         <a href="/roadmap.html">Road Map</a>
         <a href="/join.html">Join</a>
       </nav>
+
     </div>
   </header>
 
+
   <main>
+
     <div class="breadcrumb-wrap">
-      <nav class="breadcrumb container" aria-label="Breadcrumb">
+      <nav
+        class="breadcrumb container"
+        aria-label="Breadcrumb"
+      >
         <a href="/index.html">Home</a>
         <span class="breadcrumb-separator">/</span>
         <span aria-current="page">Projects</span>
       </nav>
     </div>
 
+
     <section class="page-hero">
       <div class="container">
-        <span class="eyebrow">Projects</span>
-        <h1>What we're building.</h1>
-        <p>Add club projects here as teams start working on them. Each project can have its own photo, description, status and link.</p>
+
+        <span class="eyebrow">
+          Projects
+        </span>
+
+        <h1>
+          What we're building.
+        </h1>
+
+        <p>
+          Our members design, build, test, and improve Arduino,
+          programming, engineering, and bioengineering projects
+          through teamwork, experimentation, and hands-on
+          problem-solving.
+        </p>
+
       </div>
     </section>
+
 
     <section>
+
       <div class="container">
+
         <div class="section-head">
           <div>
-            <span class="eyebrow">Current work</span>
-            <h2>Projects in the club.</h2>
+
+            <span class="eyebrow">
+              Current work
+            </span>
+
+            <h2>
+              Projects in the club.
+            </h2>
+
           </div>
         </div>
-        <div class="grid3">
-          <a class="card" href="/projects-arduino.html" style="text-decoration: none; color: inherit;"><h3>Arduino</h3><p>Hands-on builds combining code, sensors, circuits and physical systems.</p><span class="eyebrow">View Arduino Projects</span></a>
-          <a class="card" href="/projects-programming.html" style="text-decoration: none; color: inherit;"><h3>Programming</h3><p>Software projects that help members practice problem solving and build useful tools.</p><span class="eyebrow">View Programming Projects</span></a>
-          <a class="card" href="/projects-engineering.html" style="text-decoration: none; color: inherit;"><h3>Engineering</h3><p>Team-based projects that move from an idea to a working prototype.</p><span class="eyebrow">View Engineering Projects</span></a>
+
+
+        <div class="projects-grid">
+
+          <!-- Arduino -->
+          <a
+            class="card"
+            href="/projects-arduino.html"
+            style="text-decoration: none; color: inherit;"
+          >
+
+            <h3>
+              Arduino
+            </h3>
+
+            <p>
+              Hands-on builds combining code, sensors,
+              circuits, and physical systems.
+            </p>
+
+            <span class="eyebrow">
+              View Arduino Projects
+            </span>
+
+          </a>
+
+
+          <!-- Programming -->
+          <a
+            class="card"
+            href="/projects-programming.html"
+            style="text-decoration: none; color: inherit;"
+          >
+
+            <h3>
+              Programming
+            </h3>
+
+            <p>
+              Software projects that help members practice
+              problem-solving and build useful tools.
+            </p>
+
+            <span class="eyebrow">
+              View Programming Projects
+            </span>
+
+          </a>
+
+
+          <!-- Engineering -->
+          <a
+            class="card"
+            href="/projects-engineering.html"
+            style="text-decoration: none; color: inherit;"
+          >
+
+            <h3>
+              Engineering
+            </h3>
+
+            <p>
+              Team-based design projects focused on building,
+              testing, and improving physical prototypes.
+            </p>
+
+            <span class="eyebrow">
+              View Engineering Projects
+            </span>
+
+          </a>
+
+
+          <!-- Bioengineering -->
+          <a
+            class="card"
+            href="/projects-bioengineering.html"
+            style="text-decoration: none; color: inherit;"
+          >
+
+            <h3>
+              Bioengineering
+            </h3>
+
+            <p>
+              Projects combining biology, technology, and
+              engineering to explore biomedical and
+              real-world health applications.
+            </p>
+
+            <span class="eyebrow">
+              View Bioengineering Projects
+            </span>
+
+          </a>
+
         </div>
-        <div class="public-photo-grid section-photo-gap" data-photo-section="projects"></div>
+
+
+        <div
+          class="public-photo-grid section-photo-gap"
+          data-photo-section="projects"
+        ></div>
+
       </div>
+
     </section>
+
   </main>
 
+
   <footer class="footer">
+
     <div class="container footer-grid">
-      <div><strong style="color:white">Sugar Code It</strong><br>Clements High School | Sugar Land, Texas</div>
-      <div>Arduino | Coding | Engineering | Outreach</div>
-      <div>chssugarcodeit@gmail.com</div>
+
+      <div>
+        <strong style="color:white">
+          Sugar Code It
+        </strong>
+        <br>
+        Clements High School | Sugar Land, Texas
+      </div>
+
+      <div>
+        Arduino | Programming | Engineering | Bioengineering
+      </div>
+
+      <div>
+        chssugarcodeit@gmail.com
+      </div>
+
     </div>
+
   </footer>
+
+
   <script src="/script.js"></script>
+
 </body>
 </html>

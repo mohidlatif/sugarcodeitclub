@@ -52,14 +52,6 @@
    </div>
   </header>
   <main>
-    <div class="breadcrumb-wrap">
-      <nav class="breadcrumb container" aria-label="Breadcrumb">
-        <a href="/index.html">Home</a>
-        <span class="breadcrumb-separator">/</span>
-        <span aria-current="page">Join</span>
-      </nav>
-    </div>
-
    <section class="page-hero">
     <div class="container">
      <span class="eyebrow">
@@ -106,10 +98,11 @@
       <h2>
        Member interest form
       </h2>
-      <form class="join-form" onsubmit="event.preventDefault();alert('This demo form is ready to connect to your preferred form service.');">
-       <input placeholder="Full name" required=""/>
-       <input placeholder="School email" required="" type="email"/>
-       <select required="">
+      <form class="join-form" action="join-submit.php" method="post">
+       <input name="name" placeholder="Full name" required=""/>
+       <input name="email" placeholder="School email" required="" type="email"/>
+       <input name="website" type="text" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true"/>
+       <select name="grade" required="">
         <option value="">
          Grade level
         </option>
@@ -126,8 +119,8 @@
          12
         </option>
        </select>
-       <select>
-        <option>
+       <select name="interest">
+        <option value="">
          Primary interest
         </option>
         <option>
@@ -146,7 +139,7 @@
          Not sure yet
         </option>
        </select>
-       <textarea placeholder="What would you like to learn or build?"></textarea>
+       <textarea name="message" placeholder="What would you like to learn or build?"></textarea>
        <button class="btn primary" type="submit">
         Submit interest
        </button>
@@ -174,6 +167,20 @@
   </footer>
   <script src="/script.js">
   </script>
- </body>
+ 
+  <script>
+   const status = new URLSearchParams(window.location.search).get('status');
+   if (status === 'success') {
+    alert('Thanks! Your interest form was sent to Sugar Code It.');
+    history.replaceState({}, '', 'join.html');
+   } else if (status === 'invalid') {
+    alert('Please check the form and try again.');
+    history.replaceState({}, '', 'join.html');
+   } else if (status === 'error') {
+    alert('The form could not be sent. Please email chssugarcodeit@gmail.com instead.');
+    history.replaceState({}, '', 'join.html');
+   }
+  </script>
+</body>
 </html>
 

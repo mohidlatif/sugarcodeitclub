@@ -1,19 +1,20 @@
 {
-  "periods": {
-    "2022-2024": {
-      "title": "Impact from 2022 to 2024",
-      "summary": "Use the admin page to add a summary for this period.",
-      "details": "Add the activities, projects, outreach, achievements, and other impact you want to document for 2022 to 2024."
+    "periods": {
+        "2022-2024": {
+            "title": "Impact from 2022 to 2024",
+            "summary": "Use the admin page to add a summary for this period.",
+            "details": "Add the activities, projects, outreach, achievements, and other impact you want to document for 2022 to 2024."
+        },
+        "2024-2026": {
+            "title": "Impact from 2024 to 2026",
+            "summary": "From 2024 to 2026, Sugar Code It expanded hands-on STEM learning through coding, Arduino, engineering projects, teamwork, and outreach.",
+            "details": "From 2024 to 2026, Sugar Code It grew into a more structured hands-on STEM program centered on Arduino, programming, electronics, engineering, and collaborative problem-solving. Members completed progressively more advanced technical projects, participated in engineering challenges, and developed practical experience with circuits, sensors, coding, and prototype design. During this period, the club also expanded its online presence by creating a dedicated website to document projects, track meetings and activities, organize learning resources, and make club information more accessible to current and prospective members. This helped create a stronger foundation for future projects, outreach, and student leadership."
+        },
+        "2026-2028": {
+            "title": "Impact from 2026 to 2028",
+            "summary": "Use the admin page to add a summary for this period.",
+            "details": "Add the activities, projects, outreach, achievements, and other impact you want to document for 2026 to 2028."
+        }
     },
-    "2024-2026": {
-      "title": "Impact from 2024 to 2026",
-      "summary": "Use the admin page to add a summary for this period.",
-      "details": "Add the activities, projects, outreach, achievements, and other impact you want to document for 2024 to 2026."
-    },
-    "2026-2028": {
-      "title": "Impact from 2026 to 2028",
-      "summary": "Use the admin page to add a summary for this period.",
-      "details": "Add the activities, projects, outreach, achievements, and other impact you want to document for 2026 to 2028."
-    }
-  }
+    "updated": "2026-09-02T00:30:02+00:00"
 }

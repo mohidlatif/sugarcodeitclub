@@ -1,1 +1,200 @@
-[]
+[
+    {
+        "id": "4d6bcbe8c98a2d33",
+        "category": "arduino",
+        "title": "Arduino and Circuit Foundations",
+        "description": "Members set up Arduino Uno boards, identified their major components, and constructed introductory circuits while learning about voltage, current, resistance, power, Ohm\u2019s law, and electrical safety.",
+        "status": "Completed | 2025\u20132026",
+        "link": "",
+        "updated": "2026-09-01T05:09:10+00:00"
+    },
+    {
+        "id": "158c8562f53c8787",
+        "category": "arduino",
+        "title": "Programmable LED Circuits",
+        "description": "Students constructed LED circuits, selected appropriate resistors, and programmed Arduino boards to control electronic outputs.",
+        "status": "Completed | 2025\u20132026",
+        "link": "",
+        "updated": "2026-09-01T05:22:53+00:00"
+    },
+    {
+        "id": "c3c85d92dd20e91e",
+        "category": "arduino",
+        "title": "Ultrasonic Distance-Sensing System",
+        "description": "Students connected ultrasonic sensors to Arduino boards and used the resulting measurements to detect the distance of nearby objects.",
+        "status": "Completed | 2025\u20132026",
+        "link": "",
+        "updated": "2026-09-01T05:11:21+00:00"
+    },
+    {
+        "id": "4372417fc2bec4d3",
+        "category": "arduino",
+        "title": "Advanced Electronics Systems",
+        "description": "Members experimented with transistors, DC motors, external power supplies, capacitors, and electronic displays. They learned how multiple components can be combined into larger physical systems.",
+        "status": "Completed | 2025\u20132026",
+        "link": "",
+        "updated": "2026-09-01T05:12:15+00:00"
+    },
+    {
+        "id": "1f166aad8045b537",
+        "category": "arduino",
+        "title": "Smart Physical Interaction Capstone",
+        "description": "Students designed interactive electronic systems that detected environmental or user input and produced a physical or visual response. These projects integrated sensing, actuation, and feedback.",
+        "status": "Completed | 2025\u20132026",
+        "link": "",
+        "updated": "2026-09-01T05:12:55+00:00"
+    },
+    {
+        "id": "b9034b693b582792",
+        "category": "arduino",
+        "title": "Arduino Programming and Troubleshooting",
+        "description": "Members used introductory C++ programming to control components, read sensors, and correct wiring, coding, and component-related problems.",
+        "status": "Completed | 2025\u20132026",
+        "link": "",
+        "updated": "2026-09-01T05:24:20+00:00"
+    },
+    {
+        "id": "73de35664643f1d5",
+        "category": "engineering",
+        "title": "Multi-Component Electronic Systems",
+        "description": "Students combined several electronic components to create larger systems that went beyond basic Arduino demonstrations.",
+        "status": "Completed | 2025\u20132026",
+        "link": "",
+        "updated": "2026-09-01T05:28:17+00:00"
+    },
+    {
+        "id": "ab1d63c6d210f5a5",
+        "category": "engineering",
+        "title": "Transistor and DC Motor Control",
+        "description": "Members explored how transistors can control DC motors and other components that require more power than an Arduino pin can provide directly.",
+        "status": "Completed | 2025\u20132026",
+        "link": "",
+        "updated": "2026-09-01T05:29:03+00:00"
+    },
+    {
+        "id": "fd93a1872123b808",
+        "category": "engineering",
+        "title": "External Power and Capacitors",
+        "description": "Students learned how external power supplies and capacitors can support larger and more reliable electronic systems.",
+        "status": "Completed | 2025\u20132026",
+        "link": "",
+        "updated": "2026-09-01T05:29:32+00:00"
+    },
+    {
+        "id": "cc3b1afe57a750d4",
+        "category": "engineering",
+        "title": "Electronic Display Systems",
+        "description": "Members integrated displays into their projects to present sensor readings, system information, and visual feedback.",
+        "status": "Completed | 2025\u20132026",
+        "link": "",
+        "updated": "2026-09-01T05:30:04+00:00"
+    },
+    {
+        "id": "ca999b2c44e7f6d1",
+        "category": "engineering",
+        "title": "Smart Physical Interaction System",
+        "description": "Students designed interactive systems that detected environmental or user input, triggered a physical or visual response, and combined sensing, actuation, and feedback.",
+        "status": "Completed | 2025\u20132026",
+        "link": "",
+        "updated": "2026-09-01T05:30:47+00:00"
+    },
+    {
+        "id": "af9acab7e9b6c376",
+        "category": "engineering",
+        "title": "Self-Directed Electronics Projects",
+        "description": "Students applied the skills developed throughout the program to projects aligned with their individual engineering interests.",
+        "status": "Completed | 2025\u20132026",
+        "link": "",
+        "updated": "2026-09-01T05:31:28+00:00"
+    },
+    {
+        "id": "a82468e599aeaa9a",
+        "category": "engineering",
+        "title": "Load-Bearing Bridge Challenge",
+        "description": "Teams designed bridges using craft sticks, tape, and other basic materials before testing how much weight each structure could support.",
+        "status": "Completed | 2025\u20132026",
+        "link": "",
+        "updated": "2026-09-01T05:33:09+00:00"
+    },
+    {
+        "id": "69a6963f59709abf",
+        "category": "engineering",
+        "title": "Egg-Drop Challenge",
+        "description": "Students created protective structures designed to prevent an egg from breaking when dropped.",
+        "status": "Completed | 2025\u20132026",
+        "link": "",
+        "updated": "2026-09-01T05:33:34+00:00"
+    },
+    {
+        "id": "c07395d544aa13fe",
+        "category": "engineering",
+        "title": "Floating Boat Challenge",
+        "description": "Teams designed and constructed boats capable of floating and carrying additional weight.",
+        "status": "Completed | 2025\u20132026",
+        "link": "",
+        "updated": "2026-09-01T05:34:27+00:00"
+    },
+    {
+        "id": "8a673538d81f9623",
+        "category": "engineering",
+        "title": "Spaghetti and Marshmallow Tower Challenge",
+        "description": "Students competed to build the tallest stable tower using only spaghetti and marshmallows.",
+        "status": "Completed | 2025\u20132026",
+        "link": "",
+        "updated": "2026-09-01T05:35:03+00:00"
+    },
+    {
+        "id": "800fd1d155ece29c",
+        "category": "engineering",
+        "title": "Rubber-Band Car Challenge",
+        "description": "Teams designed and built rubber-band-powered vehicles before testing their creations in a racing competition.",
+        "status": "Completed | 2025\u20132026",
+        "link": "",
+        "updated": "2026-09-01T05:35:41+00:00"
+    },
+    {
+        "id": "ef956169ea9dcf5a",
+        "category": "programming",
+        "title": "Arduino Programming and Troubleshooting",
+        "description": "Members used introductory C++ programming to control components, read sensors, and correct wiring, coding, and component-related problems.",
+        "status": "Completed | 2025\u20132026",
+        "link": "",
+        "updated": "2026-09-01T05:45:20+00:00"
+    },
+    {
+        "id": "85b8297ff7970734",
+        "category": "bioengineering",
+        "title": "Biomedical Sensor Lab",
+        "description": "Students explored pulse, temperature, and MyoWare EMG sensors to understand how electronic systems collect signals from the human body.",
+        "status": "Completed | 2025\u20132026",
+        "link": "",
+        "updated": "2026-09-02T00:05:20+00:00"
+    },
+    {
+        "id": "36321a764259c44f",
+        "category": "bioengineering",
+        "title": "Biological Signal Analysis",
+        "description": "Members examined variation and noise in biological measurements and learned how filtering and data interpretation can improve the usefulness of sensor readings.",
+        "status": "Completed | 2025\u20132026",
+        "link": "",
+        "updated": "2026-09-02T00:06:10+00:00"
+    },
+    {
+        "id": "5081d80c0803923c",
+        "category": "bioengineering",
+        "title": "Human Monitoring and Response Capstone",
+        "description": "Students combined biological sensors, data processing, and electronic outputs to create systems that measured a human-related signal and provided meaningful feedback.",
+        "status": "Completed | 2025\u20132026",
+        "link": "",
+        "updated": "2026-09-02T00:06:44+00:00"
+    },
+    {
+        "id": "8f57e20315f821c4",
+        "category": "bioengineering",
+        "title": "Prosthetic and Assistive Technology Exploration",
+        "description": "Members investigated how Arduino boards, muscle sensors, electronics, and programming can contribute to prosthetic and assistive technologies.",
+        "status": "Completed | 2025\u20132026",
+        "link": "",
+        "updated": "2026-09-02T00:07:23+00:00"
+    }
+]

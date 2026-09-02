@@ -1,1 +1,207 @@
-[]
+[
+    {
+        "id": "011133d040788a38",
+        "date": "2026-08-26",
+        "name": "1st Club meeting",
+        "time": "",
+        "details": "Students participated in a Kahoot-based engineering challenge"
+    },
+    {
+        "id": "9ba6774bb907391d",
+        "date": "2026-09-10",
+        "name": "Club Meeting",
+        "time": "3:00 PM - 4:00 PM",
+        "details": "Room 2102",
+        "cancelled": false,
+        "series_id": "clubmeeting-2026-2027",
+        "start_time": "15:00",
+        "end_time": "16:00"
+    },
+    {
+        "id": "3db93b1ac118e510",
+        "date": "2026-09-24",
+        "name": "Club Meeting",
+        "time": "3:00 PM - 4:00 PM",
+        "details": "Room 2102",
+        "cancelled": false,
+        "series_id": "clubmeeting-2026-2027",
+        "start_time": "15:00",
+        "end_time": "16:00"
+    },
+    {
+        "id": "f74edbb33d22e5fd",
+        "date": "2026-10-08",
+        "name": "Club Meeting",
+        "time": "3:00 PM - 4:00 PM",
+        "details": "Room 2102",
+        "cancelled": false,
+        "series_id": "clubmeeting-2026-2027",
+        "start_time": "15:00",
+        "end_time": "16:00"
+    },
+    {
+        "id": "e0450da17cdb487b",
+        "date": "2026-10-22",
+        "name": "Club Meeting",
+        "time": "3:00 PM - 4:00 PM",
+        "details": "Room 2102",
+        "cancelled": false,
+        "series_id": "clubmeeting-2026-2027",
+        "start_time": "15:00",
+        "end_time": "16:00"
+    },
+    {
+        "id": "8d586278fa2b5247",
+        "date": "2026-11-05",
+        "name": "Club Meeting",
+        "time": "3:00 PM - 4:00 PM",
+        "details": "Room 2102",
+        "cancelled": false,
+        "series_id": "clubmeeting-2026-2027",
+        "start_time": "15:00",
+        "end_time": "16:00"
+    },
+    {
+        "id": "f80d3c1de1a7345d",
+        "date": "2026-11-19",
+        "name": "Club Meeting",
+        "time": "3:00 PM - 4:00 PM",
+        "details": "Room 2102",
+        "cancelled": false,
+        "series_id": "clubmeeting-2026-2027",
+        "start_time": "15:00",
+        "end_time": "16:00"
+    },
+    {
+        "id": "dd07317e6a4fa8c1",
+        "date": "2026-12-03",
+        "name": "Club Meeting",
+        "time": "3:00 PM - 4:00 PM",
+        "details": "Room 2102",
+        "cancelled": false,
+        "series_id": "clubmeeting-2026-2027",
+        "start_time": "15:00",
+        "end_time": "16:00"
+    },
+    {
+        "id": "b05c1b9f64e810d0",
+        "date": "2026-12-17",
+        "name": "Club Meeting",
+        "time": "3:00 PM - 4:00 PM",
+        "details": "Room 2102",
+        "cancelled": false,
+        "series_id": "clubmeeting-2026-2027",
+        "start_time": "15:00",
+        "end_time": "16:00"
+    },
+    {
+        "id": "a0d1dc2ecd1320cc",
+        "date": "2026-12-31",
+        "name": "Club Meeting",
+        "time": "3:00 PM - 4:00 PM",
+        "details": "Room 2102",
+        "cancelled": false,
+        "series_id": "clubmeeting-2026-2027",
+        "start_time": "15:00",
+        "end_time": "16:00"
+    },
+    {
+        "id": "75315b0c52b79a8a",
+        "date": "2027-01-14",
+        "name": "Club Meeting",
+        "time": "3:00 PM - 4:00 PM",
+        "details": "Room 2102",
+        "cancelled": false,
+        "series_id": "clubmeeting-2026-2027",
+        "start_time": "15:00",
+        "end_time": "16:00"
+    },
+    {
+        "id": "298a8d38509d3475",
+        "date": "2027-01-28",
+        "name": "Club Meeting",
+        "time": "3:00 PM - 4:00 PM",
+        "details": "Room 2102",
+        "cancelled": false,
+        "series_id": "clubmeeting-2026-2027",
+        "start_time": "15:00",
+        "end_time": "16:00"
+    },
+    {
+        "id": "3d19e332675afa12",
+        "date": "2027-02-11",
+        "name": "Club Meeting",
+        "time": "3:00 PM - 4:00 PM",
+        "details": "Room 2102",
+        "cancelled": false,
+        "series_id": "clubmeeting-2026-2027",
+        "start_time": "15:00",
+        "end_time": "16:00"
+    },
+    {
+        "id": "4a994f1ed4972a14",
+        "date": "2027-02-25",
+        "name": "Club Meeting",
+        "time": "3:00 PM - 4:00 PM",
+        "details": "Room 2102",
+        "cancelled": false,
+        "series_id": "clubmeeting-2026-2027",
+        "start_time": "15:00",
+        "end_time": "16:00"
+    },
+    {
+        "id": "b1703a97f87345dd",
+        "date": "2027-03-11",
+        "name": "Club Meeting",
+        "time": "3:00 PM - 4:00 PM",
+        "details": "Room 2102",
+        "cancelled": false,
+        "series_id": "clubmeeting-2026-2027",
+        "start_time": "15:00",
+        "end_time": "16:00"
+    },
+    {
+        "id": "6b756e2ee0209c6a",
+        "date": "2027-03-25",
+        "name": "Club Meeting",
+        "time": "3:00 PM - 4:00 PM",
+        "details": "Room 2102",
+        "cancelled": false,
+        "series_id": "clubmeeting-2026-2027",
+        "start_time": "15:00",
+        "end_time": "16:00"
+    },
+    {
+        "id": "ff4211775ac08655",
+        "date": "2027-04-08",
+        "name": "Club Meeting",
+        "time": "3:00 PM - 4:00 PM",
+        "details": "Room 2102",
+        "cancelled": false,
+        "series_id": "clubmeeting-2026-2027",
+        "start_time": "15:00",
+        "end_time": "16:00"
+    },
+    {
+        "id": "a3b997ca3b355659",
+        "date": "2027-04-22",
+        "name": "Club Meeting",
+        "time": "3:00 PM - 4:00 PM",
+        "details": "Room 2102",
+        "cancelled": false,
+        "series_id": "clubmeeting-2026-2027",
+        "start_time": "15:00",
+        "end_time": "16:00"
+    },
+    {
+        "id": "bf8211fa6c5c4a99",
+        "date": "2027-05-06",
+        "name": "Club Meeting",
+        "time": "3:00 PM - 4:00 PM",
+        "details": "Room 2102",
+        "cancelled": false,
+        "series_id": "clubmeeting-2026-2027",
+        "start_time": "15:00",
+        "end_time": "16:00"
+    }
+]

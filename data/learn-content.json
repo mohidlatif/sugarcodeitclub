@@ -1,44 +1,44 @@
 {
-  "sections": [
-    {
-      "id": "arduino-fundamentals",
-      "number": "01",
-      "title": "Arduino fundamentals",
-      "summary": "Inputs, outputs, pins, sketches and serial monitoring.",
-      "level": "Beginner",
-      "content": "Learn the basic structure of an Arduino project and how a microcontroller interacts with the physical world. This section can cover digital and analog pins, inputs and outputs, basic sketches, the setup and loop functions, and using the Serial Monitor to test and debug code."
-    },
-    {
-      "id": "circuits-components",
-      "number": "02",
-      "title": "Circuits and components",
-      "summary": "LEDs, resistors, breadboards, buttons and safe prototyping.",
-      "level": "Beginner",
-      "content": "Build simple circuits safely and understand how common electronic components work together. This section can include breadboard layout, LEDs, resistors, buttons, basic circuit diagrams, power and ground connections, and safe prototyping habits."
-    },
-    {
-      "id": "sensors-data",
-      "number": "03",
-      "title": "Sensors and data",
-      "summary": "Read physical inputs, interpret measurements and trigger responses.",
-      "level": "Intermediate",
-      "content": "Connect sensors to Arduino projects and turn physical measurements into useful data. This section can cover reading sensor values, calibrating measurements, viewing data through the Serial Monitor, setting thresholds, and making a project respond to changing inputs."
-    },
-    {
-      "id": "motors-control",
-      "number": "04",
-      "title": "Motors and control",
-      "summary": "Use servos and motors to make projects move and react.",
-      "level": "Intermediate",
-      "content": "Add movement to projects using servos and other motors. This section can cover controlling position and speed, supplying motors safely, using external control components when needed, and combining sensors with movement to create responsive systems."
-    },
-    {
-      "id": "project-engineering",
-      "number": "05",
-      "title": "Project engineering",
-      "summary": "Define a problem, prototype, test, debug, document and present.",
-      "level": "Project",
-      "content": "Bring coding and engineering skills together in a complete project. This section can guide members through defining a problem, planning a solution, building a prototype, testing and debugging, documenting their work, improving the design, and presenting the final result."
-    }
-  ]
+    "sections": [
+        {
+            "id": "arduino-fundamentals",
+            "number": "01",
+            "title": "Arduino fundamentals",
+            "summary": "Inputs, outputs, pins, sketches and serial monitoring.",
+            "level": "Beginner",
+            "content": "Level 1: Electronics & Arduino Foundations\r\n\r\nLearn the fundamentals of electricity, including voltage, current, resistance, power, and Ohm\u2019s Law.\r\nUnderstand how Arduino boards work and how they connect programming with real-world electronics.\r\nExplore basic components and circuits while building the foundation needed for more advanced engineering projects.\r\nSee how Arduino technology is used in applications ranging from sensors and motors to prosthetics and scientific experiments.\r\nBiomedical Engineering Track\r\n\r\nApply electronics and programming to the human body and biomedical systems.\r\nWork with sensors such as heart-rate, temperature, and EMG muscle sensors.\r\nLearn how to analyze noisy, variable real-world biological signals and turn data into meaningful feedback.\r\nComplete increasingly independent projects, including human-monitoring systems and other biomedical engineering applications.\r\n\r\nElectrical Engineering Track\r\nBuild larger, more advanced electronic systems that function like real products and mechanisms.\r\nWork with components such as transistors, DC motors, displays, capacitors, and external power supplies.\r\nCombine sensing, actuation, and feedback to create interactive hardware projects.\r\nEmphasize experimentation, problem-solving, iteration, and self-directed engineering design."
+        },
+        {
+            "id": "circuits-components",
+            "number": "02",
+            "title": "Circuits and components",
+            "summary": "LEDs, resistors, breadboards, buttons and safe prototyping.",
+            "level": "Beginner",
+            "content": "Build simple circuits safely and understand how common electronic components work together. This section can include breadboard layout, LEDs, resistors, buttons, basic circuit diagrams, power and ground connections, and safe prototyping habits."
+        },
+        {
+            "id": "sensors-data",
+            "number": "03",
+            "title": "Sensors and data",
+            "summary": "Read physical inputs, interpret measurements and trigger responses.",
+            "level": "Intermediate",
+            "content": "Connect sensors to Arduino projects and turn physical measurements into useful data. This section can cover reading sensor values, calibrating measurements, viewing data through the Serial Monitor, setting thresholds, and making a project respond to changing inputs."
+        },
+        {
+            "id": "motors-control",
+            "number": "04",
+            "title": "Motors and control",
+            "summary": "Use servos and motors to make projects move and react.",
+            "level": "Intermediate",
+            "content": "Add movement to projects using servos and other motors. This section can cover controlling position and speed, supplying motors safely, using external control components when needed, and combining sensors with movement to create responsive systems."
+        },
+        {
+            "id": "project-engineering",
+            "number": "05",
+            "title": "Project engineering",
+            "summary": "Define a problem, prototype, test, debug, document and present.",
+            "level": "Project",
+            "content": "Bring coding and engineering skills together in a complete project. This section can guide members through defining a problem, planning a solution, building a prototype, testing and debugging, documenting their work, improving the design, and presenting the final result."
+        }
+    ]
 }
