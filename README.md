@@ -1,42 +1,48 @@
 # Sugar Code It
 
-This repository contains the website for **Sugar Code It**, a student-led STEM club focused on Arduino, programming, and engineering at **William P. Clements High School in Sugar Land, Texas**.
+**Official website repository for Sugar Code It, a student-led STEM club at William P. Clements High School that teaches Arduino, programming, and engineering through hands-on projects.**
 
-Sugar Code It gives students opportunities to learn technical concepts and apply them through hands-on projects. Meetings combine short lessons with project work, troubleshooting, and collaboration so members can understand both how something works and how to build it themselves.
+**Live site:** [sugar-code-it.com](https://sugar-code-it.com)
+
+---
+
+## About the Club
+
+Sugar Code It gives students a place to learn technical concepts and apply them right away. Meetings combine short lessons with project work, troubleshooting, and collaboration so members understand not only how something works, but how to build it themselves.
 
 ## About the Website
 
-I develop and maintain this website to keep the club's resources, projects, meetings, and updates organized in one place.
+I built and maintain this site to keep the club's meetings, resources, projects, and updates organized in one place for current members and students interested in joining.
 
-The site includes:
+### Features
 
-- Club meeting dates and calendar information
-- Meeting details and attendance records
-- Arduino, electronics, and programming resources
-- Engineering and bioengineering project pages
-- Club impact and past activities
-- A roadmap for future lessons and projects
-- Information for students interested in joining
+- **Calendar and meetings:** meeting dates, details, and attendance information
+- **Learning resources:** Arduino, electronics, and programming material
+- **Project pages:** engineering and bioengineering projects
+- **Impact and history:** club activities and past work
+- **Roadmap:** upcoming lessons and projects
+- **Join page:** information for prospective members
+- **Responsive design:** works across desktop and mobile devices
 
-Some content is loaded dynamically using PHP and JSON, making it easier to update meetings, projects, and other information without rebuilding each page manually.
+### Easy-to-update content
 
-## Technologies Used
+Meetings, projects, and other updates are loaded dynamically through PHP endpoints and JSON data files, making it easier to update site content without rebuilding each page manually.
 
-- HTML
-- CSS
-- JavaScript
-- PHP
-- JSON
-- Git and GitHub
+## Tech Stack
 
-The website is designed to work across both desktop and mobile devices.
+| Layer | Technology |
+|---|---|
+| Front end | HTML, CSS, JavaScript |
+| Back end | PHP endpoints |
+| Data | JSON |
+| Version control | Git and GitHub |
 
 ## Repository Structure
 
 ```text
-api/        PHP endpoints used by the public website
-assets/     Public website assets
-data/       JSON files used for dynamic content
+api/            PHP endpoints used by the public website
+assets/         Public website assets
+data/           JSON files used for dynamic content
 
 index.html      Home page
 about.html      About the club
@@ -52,26 +58,46 @@ styles.css      Shared styling
 script.js       Shared JavaScript
 ```
 
+## Running Locally
+
+With PHP installed:
+
+```bash
+git clone https://github.com/mohidlatif/sugarcodeitclub.git
+cd sugarcodeitclub
+php -S localhost:8000
+```
+
+Then open `http://localhost:8000` in a browser.
+
+This public repository intentionally excludes administrative, authentication, and private-upload files, so functionality that depends on those components is not included in the local public version.
+
 ## My Role
 
 **Mohid Latif — Vice President & Webmaster**
 
-I was elected Vice President at the end of the 2025–26 school year and continue to serve as Webmaster. My work with Sugar Code It includes club leadership, instruction, curriculum planning, and web development.
+I was elected Vice President at the end of the 2025–26 school year and continue to serve as Webmaster. My role includes club leadership, technical instruction, curriculum planning, and web development.
 
-My contributions include:
+### Leadership and Instruction
 
-- Helping lead club planning and technical activities with fellow officers and our faculty sponsor
-- Developing and maintaining the club website as Webmaster, keeping meeting information, projects, and learning resources up to date
-- Expanding the Bioengineering and project sections with new technical content and learning resources
-- Improving meeting, event, and calendar content across the website
-- Introducing the programming, Arduino, electronics, and engineering concepts behind projects before hands-on work begins
-- Guiding members through project setup, programming, electronics, and troubleshooting during club activities
-- Updating and organizing the **Sugar Code It syllabus and project curriculum**, including the sequencing of lessons, technical topics, and hands-on projects throughout the year
-- Coordinating technical documentation and member engagement with fellow officers and the faculty sponsor
+- Help lead club planning and technical activities alongside fellow officers and our faculty sponsor
+- Explain programming, Arduino, electronics, and engineering concepts before hands-on projects so members understand the ideas behind what they are building
+- Guide members through project setup, programming, electronics, and troubleshooting as they work
+
+### Curriculum
+
+- Update and organize the **Sugar Code It syllabus and project curriculum**, including the order of lessons, technical topics, and hands-on projects throughout the year
+
+### Web Development
+
+- Design, build, and maintain the club website as Webmaster
+- Expand the Bioengineering and project sections with new technical content and learning resources
+- Keep meeting, event, and calendar content current
+- Work with fellow officers and our faculty sponsor on technical documentation and member engagement
 
 ## Privacy
 
-This repository contains the public version of the website. Administrative files, authentication files, server configuration, logs, private uploads, and identifiable student photos are intentionally excluded.
+This repository contains only the public version of the website. Administrative files, authentication files, server configuration, logs, private uploads, and identifiable student photos are intentionally excluded to protect members' privacy.
 
 ---
 
