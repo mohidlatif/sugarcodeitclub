@@ -1,152 +1,1750 @@
 <!DOCTYPE html>
 <html lang="en">
- <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width,initial-scale=1" name="viewport"/>
-  <title>
-   Impact | Sugar Code It
-  </title>
-  <link href="/styles.css" rel="stylesheet"/>
- </head>
- <body>
-  <header class="nav">
-   <div class="container navin">
-    <a class="brand" href="/index.html">
-     <img alt="Sugar Code It logo" src="/assets/logo.png"/>
-     <span>
-      Sugar Code It
-     </span>
-    </a>
-    <button aria-label="Open navigation" class="menu">
-     Menu
-    </button>
-    <nav class="links">
-     <a href="/index.html">
-      Home
-     </a>
-     <a href="/about.html">
-      About
-     </a>
-     <a href="/meetings.html">
-      Meetings
-     </a>
-     <a href="/calendar.html">
-      Calendar
-     </a>
-     <a href="/learn.html">
-      Learn
-     </a>
-     <a href="/projects.html">
-      Projects
-     </a>
-     <a href="/impact.html">
-      Impact
-     </a>
-     <a href="/roadmap.html">
-      Road Map
-     </a>
-     <a href="/join.html">
-      Join
-     </a>
-    </nav>
-   </div>
-  </header>
-  <main>
-    <div class="breadcrumb-wrap">
-      <nav class="breadcrumb container" aria-label="Breadcrumb">
-        <a href="/index.html">Home</a>
-        <span class="breadcrumb-separator">/</span>
-        <span aria-current="page">Impact</span>
-      </nav>
-    </div>
 
-   <section class="page-hero">
-    <div class="container">
-     <span class="eyebrow">
-      Impact
-     </span>
-     <h1>
-      Build skills. Share them.
-     </h1>
-     <p>
-      Sugar Code It connects student engineering with service by creating opportunities to teach, volunteer and bring STEM learning to the wider Houston community.
-     </p>
-    </div>
-   </section>
-   <section>
-    <div class="container grid3">
-     <a class="card" href="/impact-2022-2024.html" style="text-decoration:none; color:inherit; display:block; min-height:190px;">
-      <div class="metric">2022 to 2024</div>
-      <p style="margin-top:12px;">Impact, activities and milestones from 2022 to 2024.</p>
-      <span class="pill" style="margin-top:22px;">View 2022 to 2024</span>
-     </a>
-     <a class="card" href="/impact-2024-2026.html" style="text-decoration:none; color:inherit; display:block; min-height:190px;">
-      <div class="metric">2024 to 2026</div>
-      <p style="margin-top:12px;">Impact, activities and milestones from 2024 to 2026.</p>
-      <span class="pill" style="margin-top:22px;">View 2024 to 2026</span>
-     </a>
-     <a class="card" href="/impact-2026-2028.html" style="text-decoration:none; color:inherit; display:block; min-height:190px;">
-      <div class="metric">2026 to 2028</div>
-      <p style="margin-top:12px;">Impact, activities and milestones from 2026 to 2028.</p>
-      <span class="pill" style="margin-top:22px;">View 2026 to 2028</span>
-     </a>
-    </div>
-   </section>
-   <section>
-    <div class="container grid2">
-     <div class="card">
-      <h2>
-       Volunteering
-      </h2>
-      <p>
-       The club has connected members with STEM volunteering opportunities, including work with organizations such as Steel City Codes and STEM Spark.
-      </p>
-     </div>
-     <div class="photo-card card">
-      <img alt="Sugar Code It students at a club presentation" src="/assets/meeting-4.jpg"/>
-      <div class="copy">
-       <h3>
-        Measure what matters
-       </h3>
-       <p>
-        The 2026-27 site adds a dedicated place to document workshops, volunteer hours, students reached, projects completed and community partners.
-       </p>
-      </div>
-     </div>
-    </div>
-   </section>
+<head>
 
-    <section>
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <span class="eyebrow">Photos</span>
-            <h2>Impact photos.</h2>
-          </div>
-        </div>
-        <div class="public-photo-grid" data-photo-section="impact"></div>
-      </div>
-    </section>
-  </main>
-  <footer class="footer">
-   <div class="container footer-grid">
-    <div>
-     <strong style="color:white">
-      Sugar Code It
-     </strong>
-     <br/>
-     Clements High School | Sugar Land, Texas
-    </div>
-    <div>
-     Arduino | Electrical | Biomedical | Engineering
-    </div>
-    <div>
-     chssugarcodeit@gmail.com
-    </div>
-   </div>
-  </footer>
-  <script src="/script.js">
-  </script>
- </body>
+<meta charset="utf-8">
+
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1"
+>
+
+<title>Impact | Sugar Code It</title>
+
+<meta
+  name="description"
+  content="See Sugar Code It's participation, projects, outreach, and documented impact at Clements High School."
+>
+
+<link
+  rel="stylesheet"
+  href="/styles.css"
+>
+
+<style>
+
+.impact-page{
+    background:#071525;
+    color:#fff;
+}
+
+
+.impact-hero{
+    padding:76px 0 72px;
+}
+
+
+.impact-hero-copy{
+    max-width:900px;
+}
+
+
+.impact-hero h1{
+    margin:10px 0 18px;
+
+    font-size:
+        clamp(
+            2.9rem,
+            5vw,
+            4.8rem
+        );
+
+    line-height:1.03;
+}
+
+
+.impact-hero p{
+    max-width:860px;
+
+    margin:0;
+
+    color:var(--muted);
+
+    font-size:1.1rem;
+    line-height:1.75;
+}
+
+
+.impact-section{
+    padding:82px 0;
+
+    border-top:
+        1px solid
+        rgba(255,255,255,.08);
+}
+
+
+.impact-section-heading{
+    max-width:820px;
+
+    margin-bottom:34px;
+}
+
+
+.impact-section-heading h2{
+    margin:9px 0 13px;
+
+    font-size:
+        clamp(
+            2rem,
+            4vw,
+            3rem
+        );
+
+    line-height:1.1;
+}
+
+
+.impact-section-heading p{
+    margin:0;
+
+    color:var(--muted);
+
+    line-height:1.7;
+}
+
+
+/* ================================================================
+   TOP STAT CARDS
+   ================================================================ */
+
+.impact-stat-grid{
+    display:grid;
+
+    grid-template-columns:
+        repeat(
+            4,
+            minmax(0,1fr)
+        );
+
+    gap:18px;
+}
+
+
+.impact-stat-card{
+    padding:26px;
+
+    border:
+        1px solid
+        rgba(111,134,255,.25);
+
+    border-radius:17px;
+
+    background:#10243b;
+}
+
+
+.impact-stat-number{
+    display:block;
+
+    margin-bottom:12px;
+
+    color:#fff;
+
+    font-size:
+        clamp(
+            2.1rem,
+            4vw,
+            3.7rem
+        );
+
+    font-weight:900;
+    line-height:1;
+}
+
+
+.impact-stat-card h3{
+    margin:0 0 9px;
+
+    font-size:1.05rem;
+}
+
+
+.impact-stat-card p{
+    margin:0;
+
+    color:var(--muted);
+
+    line-height:1.6;
+}
+
+
+/* ================================================================
+   AUTOMATIC ATTENDANCE SECTION
+   ================================================================ */
+
+.dynamic-attendance{
+    background:
+        rgba(
+            111,
+            134,
+            255,
+            .055
+        );
+}
+
+
+.attendance-summary-grid{
+    display:grid;
+
+    grid-template-columns:
+        repeat(
+            2,
+            minmax(0,1fr)
+        );
+
+    gap:20px;
+
+    max-width:900px;
+}
+
+
+.attendance-summary-card{
+    padding:30px;
+
+    min-height:175px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    border:
+        1px solid
+        rgba(111,134,255,.37);
+
+    border-radius:18px;
+
+    background:#10243b;
+}
+
+
+.attendance-summary-card strong{
+    display:block;
+
+    margin-bottom:12px;
+
+    color:#fff;
+
+    font-size:
+        clamp(
+            2.5rem,
+            5vw,
+            4.5rem
+        );
+
+    font-weight:900;
+    line-height:1;
+}
+
+
+.attendance-summary-card span{
+    display:block;
+
+    color:#dce5f0;
+
+    font-size:1.05rem;
+    font-weight:800;
+}
+
+
+/* ================================================================
+   INFORMATION CARDS
+   ================================================================ */
+
+.impact-three-grid{
+    display:grid;
+
+    grid-template-columns:
+        repeat(
+            3,
+            minmax(0,1fr)
+        );
+
+    gap:20px;
+}
+
+
+.impact-info-card{
+    padding:26px;
+
+    border:
+        1px solid
+        rgba(255,255,255,.10);
+
+    border-radius:17px;
+
+    background:
+        rgba(
+            255,
+            255,
+            255,
+            .035
+        );
+}
+
+
+.impact-info-card h3{
+    margin:0 0 10px;
+
+    font-size:1.35rem;
+}
+
+
+.impact-info-card p{
+    margin:0;
+
+    color:var(--muted);
+
+    line-height:1.7;
+}
+
+
+/* ================================================================
+   OUTREACH
+   ================================================================ */
+
+.outreach-layout{
+    display:grid;
+
+    grid-template-columns:
+        minmax(0,1.1fr)
+        minmax(320px,.9fr);
+
+    gap:34px;
+
+    align-items:start;
+}
+
+
+.outreach-copy p{
+    color:var(--muted);
+
+    line-height:1.75;
+}
+
+
+.outreach-photo{
+    margin:0;
+
+    overflow:hidden;
+
+    border:
+        1px solid
+        rgba(255,255,255,.10);
+
+    border-radius:18px;
+
+    background:#10243b;
+}
+
+
+.outreach-photo img{
+    display:block;
+
+    width:100%;
+
+    aspect-ratio:4/3;
+
+    object-fit:cover;
+}
+
+
+.outreach-photo figcaption{
+    padding:14px 16px 16px;
+
+    color:#dce5f0;
+}
+
+
+/* ================================================================
+   IMPACT PHOTO GALLERY
+   ================================================================ */
+
+.impact-photo-grid{
+    display:grid;
+
+    grid-template-columns:
+        repeat(
+            3,
+            minmax(0,1fr)
+        );
+
+    gap:18px;
+}
+
+
+.impact-photo-card{
+    margin:0;
+
+    overflow:hidden;
+
+    border:
+        1px solid
+        rgba(255,255,255,.10);
+
+    border-radius:16px;
+
+    background:#10243b;
+}
+
+
+.impact-photo-card img{
+    display:block;
+
+    width:100%;
+
+    aspect-ratio:4/3;
+
+    object-fit:cover;
+}
+
+
+.impact-photo-card figcaption{
+    padding:14px 16px 16px;
+
+    color:#dce5f0;
+}
+
+
+.impact-photo-empty{
+    grid-column:1/-1;
+
+    padding:28px;
+
+    border:
+        1px dashed
+        rgba(255,255,255,.13);
+
+    border-radius:14px;
+
+    color:var(--muted);
+
+    text-align:center;
+}
+
+
+/* ================================================================
+   RESPONSIVE
+   ================================================================ */
+
+@media(max-width:900px){
+
+    .impact-stat-grid,
+    .impact-three-grid{
+        grid-template-columns:
+            repeat(
+                2,
+                minmax(0,1fr)
+            );
+    }
+
+
+    .outreach-layout{
+        grid-template-columns:1fr;
+    }
+
+}
+
+
+@media(max-width:650px){
+
+    .impact-stat-grid,
+    .impact-three-grid,
+    .attendance-summary-grid,
+    .impact-photo-grid{
+        grid-template-columns:1fr;
+    }
+
+
+    .impact-hero{
+        padding-top:54px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body class="impact-page">
+
+
+<!-- ================================================================
+     NAVIGATION
+     ================================================================ -->
+
+<header class="nav">
+
+<div class="container navin">
+
+
+<a
+  class="brand"
+  href="/index.html"
+>
+
+<img
+  src="/assets/logo.png"
+  alt="Sugar Code It logo"
+>
+
+<span>
+Sugar Code It
+</span>
+
+</a>
+
+
+<button
+  class="menu"
+  type="button"
+  aria-expanded="false"
+  aria-label="Open navigation"
+>
+Menu
+</button>
+
+
+<nav class="links">
+
+<a href="/index.html">
+Home
+</a>
+
+<a href="/about.html">
+About
+</a>
+
+<a href="/meetings.html">
+Meetings
+</a>
+
+<a href="/calendar.html">
+Calendar
+</a>
+
+<a href="/learn.html">
+Learn
+</a>
+
+<a href="/projects.html">
+Projects
+</a>
+
+<a
+  class="active"
+  href="/impact.html"
+>
+Impact
+</a>
+
+<a href="/roadmap.html">
+Road Map
+</a>
+
+<a href="/join.html">
+Join
+</a>
+
+</nav>
+
+
+</div>
+
+</header>
+
+
+
+<main>
+
+
+<!-- ================================================================
+     HERO
+     ================================================================ -->
+
+<section class="impact-hero">
+
+<div class="container">
+
+<div class="impact-hero-copy">
+
+
+<span class="eyebrow">
+Impact
+</span>
+
+
+<h1>
+Our Impact
+</h1>
+
+
+<p>
+Sugar Code It is a project-focused STEM club where students develop
+technical and problem-solving skills through hands-on Arduino, coding,
+electronics, engineering, and bioengineering activities.
+</p>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ================================================================
+     MAIN IMPACT STATS
+     ================================================================ -->
+
+<section class="impact-section">
+
+<div class="container">
+
+
+<div class="impact-stat-grid">
+
+
+<article class="impact-stat-card">
+
+<span class="impact-stat-number">
+60
+</span>
+
+<h3>
+Highest recorded meeting attendance
+</h3>
+
+<p>
+60 students attended a Sugar Code It meeting in 2026–2027,
+marking the club's highest recorded attendance to date.
+</p>
+
+</article>
+
+
+
+<article class="impact-stat-card">
+
+<span class="impact-stat-number">
+30–40
+</span>
+
+<h3>
+Students at most meetings
+</h3>
+
+<p>
+Most meetings bring together approximately 30–40 students for
+technical lessons, engineering challenges, and collaborative project work.
+</p>
+
+</article>
+
+
+
+<article class="impact-stat-card">
+
+<span class="impact-stat-number">
+22
+</span>
+
+<h3>
+Completed projects in 2025–2026
+</h3>
+
+<p>
+Members completed 22 documented Arduino, engineering, and
+bioengineering projects during the 2025–2026 school year.
+</p>
+
+</article>
+
+
+
+<article class="impact-stat-card">
+
+<span class="impact-stat-number">
+Outreach
+</span>
+
+<h3>
+Beyond regular meetings
+</h3>
+
+<p>
+Members use their STEM experience through demonstrations,
+volunteering, teaching, and community activities.
+</p>
+
+</article>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ================================================================
+     AUTOMATIC ATTENDANCE
+     ================================================================ -->
+
+<section class="impact-section dynamic-attendance">
+
+<div class="container">
+
+
+<div class="impact-section-heading">
+
+
+<span
+  class="eyebrow"
+  id="attendanceYearLabel"
+>
+School-Year Attendance
+</span>
+
+
+<h2>
+Participation across the year
+</h2>
+
+
+<p>
+Attendance totals are calculated from recorded club meetings.
+</p>
+
+
+</div>
+
+
+
+<div class="attendance-summary-grid">
+
+
+<article class="attendance-summary-card">
+
+
+<strong id="meetingsRecorded">
+—
+</strong>
+
+
+<span>
+Meetings recorded
+</span>
+
+
+</article>
+
+
+
+<article class="attendance-summary-card">
+
+
+<strong id="totalAttendance">
+—
+</strong>
+
+
+<span>
+Total meeting attendance
+</span>
+
+
+</article>
+
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- ================================================================
+     WHAT WE DO
+     ================================================================ -->
+
+<section class="impact-section">
+
+<div class="container">
+
+
+<div class="impact-section-heading">
+
+
+<span class="eyebrow">
+What We Do
+</span>
+
+
+<h2>
+Learn. Build. Share.
+</h2>
+
+
+<p>
+Members develop technical skills, apply them through projects,
+and use what they learn in outreach and service activities.
+</p>
+
+
+</div>
+
+
+
+<div class="impact-three-grid">
+
+
+<article class="impact-info-card">
+
+
+<h3>
+Learn
+</h3>
+
+
+<p>
+Learn Arduino programming, electronics, circuits, sensors,
+and engineering fundamentals.
+</p>
+
+
+</article>
+
+
+
+<article class="impact-info-card">
+
+
+<h3>
+Build
+</h3>
+
+
+<p>
+Work with other members to prototype, test, debug,
+and improve real projects.
+</p>
+
+
+</article>
+
+
+
+<article class="impact-info-card">
+
+
+<h3>
+Share
+</h3>
+
+
+<p>
+Use what you learn beyond club meetings through teaching,
+demonstrations, workshops, and outreach.
+</p>
+
+
+</article>
+
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- ================================================================
+     OUTREACH
+     ================================================================ -->
+
+<section class="impact-section">
+
+<div class="container">
+
+
+<div class="impact-section-heading">
+
+
+<span class="eyebrow">
+Outreach
+</span>
+
+
+<h2>
+Taking STEM beyond the club
+</h2>
+
+
+</div>
+
+
+
+<div class="outreach-layout">
+
+
+<div class="outreach-copy">
+
+
+<p>
+Sugar Code It creates opportunities for members to use their technical
+skills outside regular meetings through teaching, volunteering,
+demonstrations, and community events.
+</p>
+
+
+<p>
+Members have connected with STEM service opportunities through
+organizations such as Steel City Codes and STEM Spark.
+</p>
+
+
+<p>
+The club has also represented Sugar Code It at events such as
+Ranger Camp, introducing other Clements students to the club and
+its hands-on STEM activities.
+</p>
+
+
+</div>
+
+
+
+<figure class="outreach-photo">
+
+
+<img
+  src="/assets/impact-ranger-camp.jpg"
+  alt="Sugar Code It at Ranger Camp"
+>
+
+
+<figcaption>
+Sugar Code It at Ranger Camp
+</figcaption>
+
+
+</figure>
+
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- ================================================================
+     MEASURING IMPACT
+     ================================================================ -->
+
+<section class="impact-section">
+
+<div class="container">
+
+
+<div class="impact-section-heading">
+
+
+<span class="eyebrow">
+Measuring Impact
+</span>
+
+
+<h2>
+Evidence of our impact
+</h2>
+
+
+<p>
+We document participation, completed projects, and outreach so
+Sugar Code It's growth is backed by what members actually accomplish.
+</p>
+
+
+</div>
+
+
+
+<div class="impact-three-grid">
+
+
+<article class="impact-info-card">
+
+
+<h3>
+Participation
+</h3>
+
+
+<p>
+Most meetings bring together 30–40 students, with a record
+attendance of 60 students in 2026–2027. Meeting-by-meeting
+attendance is now recorded through the club calendar.
+</p>
+
+
+</article>
+
+
+
+<article class="impact-info-card">
+
+
+<h3>
+Projects
+</h3>
+
+
+<p>
+22 documented Arduino, engineering, and bioengineering projects
+were completed during 2025–2026.
+</p>
+
+
+</article>
+
+
+
+<article class="impact-info-card">
+
+
+<h3>
+Outreach
+</h3>
+
+
+<p>
+Members have participated in club representation, STEM volunteering,
+teaching, demonstrations, and community activities.
+</p>
+
+
+</article>
+
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- ================================================================
+     IMPACT PHOTOS
+     ================================================================ -->
+
+<section class="impact-section">
+
+<div class="container">
+
+
+<div class="impact-section-heading">
+
+
+<span class="eyebrow">
+Impact in Action
+</span>
+
+
+<h2>
+Students, projects, and outreach
+</h2>
+
+
+</div>
+
+
+
+<div
+  class="impact-photo-grid"
+  id="impactPhotoGrid"
+  data-photo-section="impact"
+>
+
+
+<div class="impact-photo-empty">
+Loading impact photos...
+</div>
+
+
+</div>
+
+
+</div>
+
+</section>
+
+
+</main>
+
+
+
+<!-- ================================================================
+     FOOTER
+     ================================================================ -->
+
+<footer class="footer">
+
+<div class="container footer-grid">
+
+
+<div>
+
+
+<strong style="color:white">
+Sugar Code It
+</strong>
+
+
+<br>
+
+
+Clements High School |
+Sugar Land, Texas
+
+
+</div>
+
+
+
+<div>
+Arduino | Coding | Engineering | Outreach
+</div>
+
+
+
+<div>
+chssugarcodeit@gmail.com
+</div>
+
+
+</div>
+
+</footer>
+
+
+
+<script src="/script.js?v=52"></script>
+
+
+
+<!-- ================================================================
+     AUTOMATIC SCHOOL-YEAR ATTENDANCE
+     ================================================================ -->
+
+<script>
+
+(function () {
+
+
+    var meetingsRecorded =
+        document.getElementById(
+            'meetingsRecorded'
+        );
+
+
+    var totalAttendance =
+        document.getElementById(
+            'totalAttendance'
+        );
+
+
+    var attendanceYearLabel =
+        document.getElementById(
+            'attendanceYearLabel'
+        );
+
+
+
+    function isCancelled(
+        event
+    ) {
+
+
+        return (
+
+            event.cancelled === true ||
+
+            event.is_cancelled === true ||
+
+            String(
+                event.status ||
+                ''
+            ).toLowerCase() ===
+            'cancelled'
+
+        );
+
+
+    }
+
+
+
+    function hasAttendance(
+        event
+    ) {
+
+
+        if (
+
+            event.attendance === null ||
+
+            event.attendance === undefined ||
+
+            event.attendance === ''
+
+        ) {
+
+            return false;
+
+        }
+
+
+        var value =
+            Number(
+                event.attendance
+            );
+
+
+        return (
+
+            Number.isFinite(
+                value
+            ) &&
+
+            value >= 0
+
+        );
+
+
+    }
+
+
+
+    function getSchoolYear(
+        today
+    ) {
+
+
+        var year =
+            today.getFullYear();
+
+
+        var month =
+            today.getMonth();
+
+
+
+        /*
+         * August through December:
+         * use the current year as the
+         * beginning of the school year.
+         *
+         * January through July:
+         * use the previous calendar year.
+         */
+
+
+        var startYear =
+            month >= 7
+                ?
+                year
+                :
+                year - 1;
+
+
+
+        return {
+
+
+            startYear:
+                startYear,
+
+
+            endYear:
+                startYear + 1,
+
+
+            start:
+                String(
+                    startYear
+                ) +
+                '-08-01',
+
+
+            end:
+                String(
+                    startYear + 1
+                ) +
+                '-06-30'
+
+
+        };
+
+
+    }
+
+
+
+    var today =
+        new Date();
+
+
+
+    today.setHours(
+        0,
+        0,
+        0,
+        0
+    );
+
+
+
+    var schoolYear =
+        getSchoolYear(
+            today
+        );
+
+
+
+    attendanceYearLabel.textContent =
+        schoolYear.startYear +
+        '–' +
+        schoolYear.endYear +
+        ' Attendance';
+
+
+
+    fetch(
+
+        '/api/events.php?nocache=' +
+        Date.now(),
+
+        {
+
+            cache:
+                'no-store'
+
+        }
+
+    )
+
+
+
+    .then(
+        function (
+            response
+        ) {
+
+
+            if (
+                !response.ok
+            ) {
+
+
+                throw new Error(
+                    'Could not load attendance data.'
+                );
+
+
+            }
+
+
+            return response.json();
+
+
+        }
+    )
+
+
+
+    .then(
+        function (
+            events
+        ) {
+
+
+            if (
+                !Array.isArray(
+                    events
+                )
+            ) {
+
+
+                throw new Error(
+                    'Events API did not return an array.'
+                );
+
+
+            }
+
+
+
+            var todayString =
+                today.getFullYear() +
+                '-' +
+                String(
+                    today.getMonth() + 1
+                ).padStart(
+                    2,
+                    '0'
+                ) +
+                '-' +
+                String(
+                    today.getDate()
+                ).padStart(
+                    2,
+                    '0'
+                );
+
+
+
+            var recordedMeetings =
+                events.filter(
+                    function (
+                        event
+                    ) {
+
+
+                        var date =
+                            String(
+                                event.date ||
+                                ''
+                            );
+
+
+                        return (
+
+                            date >=
+                            schoolYear.start &&
+
+                            date <=
+                            schoolYear.end &&
+
+                            date <=
+                            todayString &&
+
+                            !isCancelled(
+                                event
+                            ) &&
+
+                            hasAttendance(
+                                event
+                            )
+
+                        );
+
+
+                    }
+                );
+
+
+
+            var total =
+                recordedMeetings.reduce(
+                    function (
+                        sum,
+                        event
+                    ) {
+
+
+                        return (
+
+                            sum +
+
+                            Number(
+                                event.attendance
+                            )
+
+                        );
+
+
+                    },
+                    0
+                );
+
+
+
+            meetingsRecorded.textContent =
+                recordedMeetings.length;
+
+
+
+            totalAttendance.textContent =
+                total.toLocaleString(
+                    'en-US'
+                );
+
+
+        }
+    )
+
+
+
+    .catch(
+        function (
+            error
+        ) {
+
+
+            console.error(
+                error
+            );
+
+
+            meetingsRecorded.textContent =
+                '—';
+
+
+            totalAttendance.textContent =
+                '—';
+
+
+        }
+    );
+
+
+}());
+
+</script>
+
+
+
+<!-- ================================================================
+     IMPACT PHOTO GALLERY
+     ================================================================ -->
+
+<script>
+
+(function () {
+
+
+    var grid =
+        document.getElementById(
+            'impactPhotoGrid'
+        );
+
+
+    if (
+        !grid
+    ) {
+
+        return;
+
+    }
+
+
+
+    fetch(
+
+        '/api/photos.php?section=impact&nocache=' +
+        Date.now(),
+
+        {
+
+            cache:
+                'no-store'
+
+        }
+
+    )
+
+
+
+    .then(
+        function (
+            response
+        ) {
+
+
+            if (
+                !response.ok
+            ) {
+
+
+                throw new Error(
+                    'Could not load impact photos.'
+                );
+
+
+            }
+
+
+            return response.json();
+
+
+        }
+    )
+
+
+
+    .then(
+        function (
+            photos
+        ) {
+
+
+            grid.innerHTML =
+                '';
+
+
+
+            if (
+
+                !Array.isArray(
+                    photos
+                ) ||
+
+                photos.length ===
+                0
+
+            ) {
+
+
+                grid.innerHTML =
+                    '<div class="impact-photo-empty">' +
+                    'Impact photos will appear here.' +
+                    '</div>';
+
+
+                return;
+
+
+            }
+
+
+
+            photos.forEach(
+                function (
+                    photo
+                ) {
+
+
+                    var figure =
+                        document.createElement(
+                            'figure'
+                        );
+
+
+
+                    figure.className =
+                        'impact-photo-card';
+
+
+
+                    var image =
+                        document.createElement(
+                            'img'
+                        );
+
+
+
+                    image.src =
+                        photo.url ||
+                        photo.path ||
+                        photo.image ||
+                        '';
+
+
+
+                    image.alt =
+                        photo.caption ||
+                        'Sugar Code It activity';
+
+
+
+                    figure.appendChild(
+                        image
+                    );
+
+
+
+                    if (
+                        photo.caption
+                    ) {
+
+
+                        var caption =
+                            document.createElement(
+                                'figcaption'
+                            );
+
+
+
+                        caption.textContent =
+                            photo.caption;
+
+
+
+                        figure.appendChild(
+                            caption
+                        );
+
+
+                    }
+
+
+
+                    grid.appendChild(
+                        figure
+                    );
+
+
+                }
+            );
+
+
+        }
+    )
+
+
+
+    .catch(
+        function (
+            error
+        ) {
+
+
+            console.error(
+                error
+            );
+
+
+            grid.innerHTML =
+                '<div class="impact-photo-empty">' +
+                'Impact photos could not be loaded.' +
+                '</div>';
+
+
+        }
+    );
+
+
+}());
+
+</script>
+
+
+</body>
+
 </html>
-

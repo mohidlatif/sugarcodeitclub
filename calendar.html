@@ -1,71 +1,922 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Calendar | Sugar Code It</title>
-  <link rel="stylesheet" href="/styles.css">
+
+<meta charset="utf-8">
+
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1"
+>
+
+<title>Calendar | Sugar Code It</title>
+
+<meta
+  name="description"
+  content="Sugar Code It meeting dates, activities, and club calendar at Clements High School."
+>
+
+<link
+  rel="stylesheet"
+  href="/styles.css"
+>
+
+<style>
+.calendar-page-section{padding:68px 0 96px}
+.calendar-intro-note{margin-bottom:30px;padding:18px 20px;border:1px solid rgba(111,134,255,.25);border-radius:14px;background:rgba(111,134,255,.08);color:#d8e1ee;line-height:1.65}
+.public-calendar-wrap{overflow:hidden;border:1px solid rgba(255,255,255,.11);border-radius:18px;background:#fff}
+.public-calendar-toolbar{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:20px;background:#10243b;color:#fff}
+.public-calendar-toolbar h2{margin:0;font-size:clamp(1.35rem,3vw,2rem)}
+.calendar-nav-button{padding:9px 14px;border:1px solid rgba(255,255,255,.20);border-radius:8px;background:transparent;color:#fff;cursor:pointer;font:inherit;font-weight:700}
+.calendar-nav-button:hover{background:rgba(255,255,255,.08)}
+.public-month-calendar{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));border-top:1px solid #d7dee8;border-left:1px solid #d7dee8;background:#fff;color:#0b1727}
+.public-calendar-day-name{padding:11px 8px;border-right:1px solid #d7dee8;border-bottom:1px solid #d7dee8;background:#edf1f6;text-align:center;font-size:.8rem;font-weight:800}
+.public-calendar-cell{min-height:135px;padding:10px;border-right:1px solid #d7dee8;border-bottom:1px solid #d7dee8;background:#fff}
+.public-calendar-cell.blank{background:#f5f7fa}
+.public-date-number{display:block;margin-bottom:8px;color:#354154;font-weight:800}
+.public-calendar-event{display:block;margin:7px 0;padding:8px;border-radius:8px;background:#e6ebff;color:#17285f;font-size:.77rem;line-height:1.35}
+.public-calendar-event.cancelled{background:#f3f3f3;color:#7a7f88;text-decoration:line-through}
+.public-event-name{display:block;font-weight:800}
+.public-event-time{display:block;margin-top:3px;color:#4b5e86}
+.public-event-attendance{display:block;margin-top:5px;color:#236b4d;font-weight:800;text-decoration:none}
+.public-calendar-event.cancelled .public-event-attendance{display:none}
+.calendar-loading,.calendar-error{padding:30px;text-align:center;color:#536174;background:#fff}
+.calendar-error{color:#8f2e35}
+
+@media(max-width:760px){
+  .public-calendar-toolbar{align-items:stretch;flex-direction:column}
+  .public-calendar-toolbar h2{text-align:center}
+  .public-calendar-wrap{overflow-x:auto}
+  .public-month-calendar{min-width:760px}
+}
+</style>
+
 </head>
+
 <body>
-  <header class="nav">
-    <div class="container navin">
-      <a class="brand" href="/index.html">
-        <img src="/assets/logo.png" alt="Sugar Code It logo">
-        <span>Sugar Code It</span>
-      </a>
-      <button class="menu" aria-label="Open navigation" aria-expanded="false">Menu</button>
-      <nav class="links">
-        <a href="/index.html">Home</a>
-        <a href="/about.html">About</a>
-        <a href="/meetings.html">Meetings</a>
-        <a href="/calendar.html">Calendar</a>
-        <a href="/learn.html">Learn</a>
-        <a href="/projects.html">Projects</a>
-        <a href="/impact.html">Impact</a>
-        <a href="/roadmap.html">Road Map</a>
-        <a href="/join.html">Join</a>
-      </nav>
-    </div>
-  </header>
 
-  <main>
-    <div class="breadcrumb-wrap">
-      <nav class="breadcrumb container" aria-label="Breadcrumb">
-        <a href="/index.html">Home</a>
-        <span class="breadcrumb-separator">/</span>
-        <span aria-current="page">Calendar</span>
-      </nav>
-    </div>
+<header class="nav">
 
-    <section class="page-hero">
-      <div class="container">
-        <span class="eyebrow">2026-27 calendar</span>
-        <h1>Club calendar.</h1>
-        <p>Move month by month to see meetings, workshops, project deadlines and club events.</p>
-      </div>
-    </section>
+<div class="container navin">
 
-    <section>
-      <div class="container">
-        <div class="calendar-toolbar">
-          <button class="button secondary" id="prevMonth" type="button">Previous</button>
-          <h2 id="calendarTitle">August 2026</h2>
-          <button class="button secondary" id="nextMonth" type="button">Next</button>
-        </div>
-        <div class="month-calendar" id="monthCalendar" aria-live="polite"></div>
-        <p class="storage-note">Calendar events are maintained by the Sugar Code It website admin.</p>
-      </div>
-    </section>
-  </main>
+<a class="brand" href="/index.html">
+<img src="/assets/logo.png" alt="Sugar Code It logo">
+<span>Sugar Code It</span>
+</a>
+
+<button
+  class="menu"
+  type="button"
+  aria-expanded="false"
+  aria-label="Open navigation"
+>
+Menu
+</button>
+
+<nav class="links">
+
+<a href="/index.html">
+Home
+</a>
+
+<a href="/about.html">
+About
+</a>
+
+<a href="/meetings.html">
+Meetings
+</a>
+
+<a
+  class="active"
+  href="/calendar.html"
+>
+Calendar
+</a>
+
+<a href="/learn.html">
+Learn
+</a>
+
+<a href="/projects.html">
+Projects
+</a>
+
+<a href="/impact.html">
+Impact
+</a>
+
+<a href="/roadmap.html">
+Road Map
+</a>
+
+<a href="/join.html">
+Join
+</a>
+
+</nav>
+
+</div>
+
+</header>
 
 
-  <footer class="footer">
-    <div class="container footer-grid">
-      <div><strong style="color:white">Sugar Code It</strong><br>Clements High School | Sugar Land, Texas</div>
-      <div>Arduino | Electrical | Biomedical | Engineering</div>
-      <div>chssugarcodeit@gmail.com</div>
-    </div>
-  </footer>
- <script src="/script.js?v=11"></script>
+<main>
+
+
+<section class="page-hero">
+
+<div class="container">
+
+<span class="eyebrow">
+2026–2027 Calendar
+</span>
+
+<h1>
+Club Calendar
+</h1>
+
+<p>
+See upcoming Sugar Code It meetings, activities, and important club dates.
+</p>
+
+</div>
+
+</section>
+
+
+<section class="calendar-page-section">
+
+<div class="container">
+
+
+<div class="calendar-intro-note">
+
+Regular meetings are held every other Thursday from
+
+<strong>
+3:00–4:00 PM
+</strong>
+
+in
+
+<strong>
+Room 2102
+</strong>.
+
+After a completed meeting, the calendar may also show the total number of students who attended.
+
+</div>
+
+
+<div class="public-calendar-wrap">
+
+
+<div class="public-calendar-toolbar">
+
+<button
+  class="calendar-nav-button"
+  id="previousMonth"
+  type="button"
+>
+← Previous
+</button>
+
+<h2 id="calendarMonthTitle">
+Loading calendar...
+</h2>
+
+<button
+  class="calendar-nav-button"
+  id="nextMonth"
+  type="button"
+>
+Next →
+</button>
+
+</div>
+
+
+<div
+  id="calendarRoot"
+  class="calendar-loading"
+>
+Loading meetings...
+</div>
+
+
+</div>
+
+
+</div>
+
+</section>
+
+
+</main>
+
+
+<footer class="footer">
+
+<div class="container footer-grid">
+
+
+<div>
+
+<strong style="color:white">
+Sugar Code It
+</strong>
+
+<br>
+
+Clements High School |
+Sugar Land, Texas
+
+</div>
+
+
+<div>
+Arduino | Coding | Engineering | Outreach
+</div>
+
+
+<div>
+chssugarcodeit@gmail.com
+</div>
+
+
+</div>
+
+</footer>
+
+
+<script src="/script.js?v=51"></script>
+
+
+<script>
+
+(function () {
+
+
+    var calendarRoot =
+        document.getElementById(
+            'calendarRoot'
+        );
+
+
+    var monthTitle =
+        document.getElementById(
+            'calendarMonthTitle'
+        );
+
+
+    var previousButton =
+        document.getElementById(
+            'previousMonth'
+        );
+
+
+    var nextButton =
+        document.getElementById(
+            'nextMonth'
+        );
+
+
+    var today =
+        new Date();
+
+
+    today.setHours(
+        0,
+        0,
+        0,
+        0
+    );
+
+
+    var visibleMonth =
+        new Date(
+            today.getFullYear(),
+            today.getMonth(),
+            1
+        );
+
+
+    var events =
+        [];
+
+
+    function isCancelled(
+        event
+    ) {
+
+        return (
+
+            event.cancelled === true ||
+
+            event.is_cancelled === true ||
+
+            String(
+                event.status ||
+                ''
+            ).toLowerCase() ===
+            'cancelled'
+
+        );
+
+    }
+
+
+    function hasAttendance(
+        event
+    ) {
+
+        if (
+            event.attendance === null ||
+            event.attendance === undefined ||
+            event.attendance === ''
+        ) {
+
+            return false;
+
+        }
+
+
+        var value =
+            Number(
+                event.attendance
+            );
+
+
+        return (
+            Number.isFinite(
+                value
+            ) &&
+            value >= 0
+        );
+
+    }
+
+
+    function eventName(
+        event
+    ) {
+
+        return (
+            event.name ||
+            event.title ||
+            'Club meeting'
+        );
+
+    }
+
+
+    function eventTime(
+        event
+    ) {
+
+        if (
+            event.time
+        ) {
+
+            return event.time;
+
+        }
+
+
+        if (
+            event.start_time &&
+            event.end_time
+        ) {
+
+            return (
+                event.start_time +
+                '–' +
+                event.end_time
+            );
+
+        }
+
+
+        return (
+            event.start_time ||
+            ''
+        );
+
+    }
+
+
+    function renderMonth() {
+
+
+        monthTitle.textContent =
+            visibleMonth.toLocaleDateString(
+                'en-US',
+                {
+                    month:
+                        'long',
+
+                    year:
+                        'numeric'
+                }
+            );
+
+
+        calendarRoot.className =
+            'public-month-calendar';
+
+
+        calendarRoot.innerHTML =
+            '';
+
+
+        var dayNames =
+            [
+                'Sun',
+                'Mon',
+                'Tue',
+                'Wed',
+                'Thu',
+                'Fri',
+                'Sat'
+            ];
+
+
+        dayNames.forEach(
+            function (
+                dayName
+            ) {
+
+                var dayHeader =
+                    document.createElement(
+                        'div'
+                    );
+
+
+                dayHeader.className =
+                    'public-calendar-day-name';
+
+
+                dayHeader.textContent =
+                    dayName;
+
+
+                calendarRoot.appendChild(
+                    dayHeader
+                );
+
+            }
+        );
+
+
+        var year =
+            visibleMonth.getFullYear();
+
+
+        var month =
+            visibleMonth.getMonth();
+
+
+        var firstDay =
+            new Date(
+                year,
+                month,
+                1
+            ).getDay();
+
+
+        var daysInMonth =
+            new Date(
+                year,
+                month + 1,
+                0
+            ).getDate();
+
+
+        for (
+            var blank = 0;
+            blank < firstDay;
+            blank++
+        ) {
+
+            var emptyCell =
+                document.createElement(
+                    'div'
+                );
+
+
+            emptyCell.className =
+                'public-calendar-cell blank';
+
+
+            calendarRoot.appendChild(
+                emptyCell
+            );
+
+        }
+
+
+        for (
+            var day = 1;
+            day <= daysInMonth;
+            day++
+        ) {
+
+
+            var cell =
+                document.createElement(
+                    'div'
+                );
+
+
+            cell.className =
+                'public-calendar-cell';
+
+
+            var dayNumber =
+                document.createElement(
+                    'span'
+                );
+
+
+            dayNumber.className =
+                'public-date-number';
+
+
+            dayNumber.textContent =
+                day;
+
+
+            cell.appendChild(
+                dayNumber
+            );
+
+
+            var dateString =
+                String(
+                    year
+                ) +
+                '-' +
+                String(
+                    month + 1
+                ).padStart(
+                    2,
+                    '0'
+                ) +
+                '-' +
+                String(
+                    day
+                ).padStart(
+                    2,
+                    '0'
+                );
+
+
+            var dayEvents =
+                events.filter(
+                    function (
+                        event
+                    ) {
+
+                        return (
+                            String(
+                                event.date ||
+                                ''
+                            ) ===
+                            dateString
+                        );
+
+                    }
+                );
+
+
+            dayEvents.forEach(
+                function (
+                    event
+                ) {
+
+
+                    var eventCard =
+                        document.createElement(
+                            'div'
+                        );
+
+
+                    eventCard.className =
+                        'public-calendar-event';
+
+
+                    var cancelled =
+                        isCancelled(
+                            event
+                        );
+
+
+                    if (
+                        cancelled
+                    ) {
+
+                        eventCard.classList.add(
+                            'cancelled'
+                        );
+
+                    }
+
+
+                    var name =
+                        document.createElement(
+                            'span'
+                        );
+
+
+                    name.className =
+                        'public-event-name';
+
+
+                    name.textContent =
+                        eventName(
+                            event
+                        );
+
+
+                    eventCard.appendChild(
+                        name
+                    );
+
+
+                    var timeValue =
+                        eventTime(
+                            event
+                        );
+
+
+                    if (
+                        timeValue
+                    ) {
+
+                        var time =
+                            document.createElement(
+                                'span'
+                            );
+
+
+                        time.className =
+                            'public-event-time';
+
+
+                        time.textContent =
+                            timeValue;
+
+
+                        eventCard.appendChild(
+                            time
+                        );
+
+                    }
+
+
+                    if (
+                        cancelled
+                    ) {
+
+                        var cancelledLabel =
+                            document.createElement(
+                                'span'
+                            );
+
+
+                        cancelledLabel.className =
+                            'public-event-time';
+
+
+                        cancelledLabel.textContent =
+                            'Cancelled';
+
+
+                        eventCard.appendChild(
+                            cancelledLabel
+                        );
+
+                    }
+
+
+                    var eventDate =
+                        new Date(
+                            dateString +
+                            'T00:00:00'
+                        );
+
+
+                    if (
+                        !cancelled &&
+                        eventDate <= today &&
+                        hasAttendance(
+                            event
+                        )
+                    ) {
+
+
+                        var attendance =
+                            document.createElement(
+                                'span'
+                            );
+
+
+                        attendance.className =
+                            'public-event-attendance';
+
+
+                        var attendanceNumber =
+                            Number(
+                                event.attendance
+                            );
+
+
+                        attendance.textContent =
+                            attendanceNumber +
+                            (
+                                attendanceNumber === 1
+                                    ?
+                                    ' student attended'
+                                    :
+                                    ' students attended'
+                            );
+
+
+                        eventCard.appendChild(
+                            attendance
+                        );
+
+                    }
+
+
+                    cell.appendChild(
+                        eventCard
+                    );
+
+                }
+            );
+
+
+            calendarRoot.appendChild(
+                cell
+            );
+
+        }
+
+    }
+
+
+    previousButton.addEventListener(
+        'click',
+        function () {
+
+
+            visibleMonth =
+                new Date(
+                    visibleMonth.getFullYear(),
+                    visibleMonth.getMonth() - 1,
+                    1
+                );
+
+
+            renderMonth();
+
+        }
+    );
+
+
+    nextButton.addEventListener(
+        'click',
+        function () {
+
+
+            visibleMonth =
+                new Date(
+                    visibleMonth.getFullYear(),
+                    visibleMonth.getMonth() + 1,
+                    1
+                );
+
+
+            renderMonth();
+
+        }
+    );
+
+
+    fetch(
+
+        '/api/events.php?nocache=' +
+        Date.now(),
+
+        {
+
+            cache:
+                'no-store'
+
+        }
+
+    )
+
+
+    .then(
+        function (
+            response
+        ) {
+
+
+            if (
+                !response.ok
+            ) {
+
+                throw new Error(
+                    'Could not load events.'
+                );
+
+            }
+
+
+            return response.json();
+
+        }
+    )
+
+
+    .then(
+        function (
+            data
+        ) {
+
+
+            if (
+                !Array.isArray(
+                    data
+                )
+            ) {
+
+                throw new Error(
+                    'Events API did not return an array.'
+                );
+
+            }
+
+
+            events =
+                data.slice().sort(
+                    function (
+                        a,
+                        b
+                    ) {
+
+                        return String(
+                            a.date ||
+                            ''
+                        ).localeCompare(
+                            String(
+                                b.date ||
+                                ''
+                            )
+                        );
+
+                    }
+                );
+
+
+            renderMonth();
+
+        }
+    )
+
+
+    .catch(
+        function (
+            error
+        ) {
+
+
+            console.error(
+                error
+            );
+
+
+            calendarRoot.className =
+                'calendar-error';
+
+
+            calendarRoot.textContent =
+                'The calendar could not be loaded. Please try again later.';
+
+        }
+    );
+
+
+}());
+
+</script>
+
+
 </body>
+
 </html>

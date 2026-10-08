@@ -1,0 +1,29 @@
+# SugarCodeIt public portfolio repository
+# Keep hosting/admin/private media out of GitHub.
+
+/admin/
+/archives/
+/uploads/
+/upload/
+/Files/
+/.well-known/
+/cgi-bin/
+
+# Server/runtime files
+*.log
+/api/error_log
+/admin.zip
+/ADMIN-SETUP.txt
+/data/download
+
+# Dynamic/student media is intentionally not stored in the public repository.
+/assets/meeting-*.jpg
+/assets/impact-ranger-camp.jpg
+/assets/ChatGPT Image*.png
+/assets/Sugar Code It Ranger Camp Display.jpg
+
+# Common local/editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

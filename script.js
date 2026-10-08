@@ -1,40 +1,92 @@
-var menu = document.querySelector('.menu');
-var navLinks = document.querySelector('.links');
+var menu =
+  document.querySelector(
+    '.menu'
+  );
 
-if (menu && navLinks) {
-  menu.addEventListener('click', function () {
-    var isOpen = navLinks.classList.toggle('open');
-    menu.setAttribute('aria-expanded', String(isOpen));
-  });
+
+var navLinks =
+  document.querySelector(
+    '.links'
+  );
+
+
+if (
+  menu &&
+  navLinks
+) {
+
+  menu.addEventListener(
+    'click',
+    function () {
+
+      var open =
+        navLinks.classList.toggle(
+          'open'
+        );
+
+
+      menu.setAttribute(
+        'aria-expanded',
+        String(open)
+      );
+
+    }
+  );
+
 }
+
+
+/*
+|--------------------------------------------------------------------------
+| Active navigation
+|--------------------------------------------------------------------------
+*/
 
 var currentPage =
-  window.location.pathname.split('/').pop() ||
+  window.location.pathname
+    .split('/')
+    .pop() ||
   'index.html';
 
+
 document
-  .querySelectorAll('.links a')
-  .forEach(function (link) {
+  .querySelectorAll(
+    '.links a'
+  )
+  .forEach(
+    function (link) {
 
-    var linkPage =
-      link.getAttribute('href').split('/').pop();
+      var href =
+        link.getAttribute(
+          'href'
+        ) || '';
 
-    if (linkPage === currentPage) {
-      link.classList.add('active');
+
+      var linkPage =
+        href
+          .split('/')
+          .pop();
+
+
+      if (
+        linkPage ===
+        currentPage
+      ) {
+
+        link.classList.add(
+          'active'
+        );
+      }
+
     }
-  });
+  );
 
 
-function escapeText(value) {
-  var div =
-    document.createElement('div');
-
-  div.textContent =
-    value || '';
-
-  return div.innerHTML;
-}
-
+/*
+|--------------------------------------------------------------------------
+| Calendar
+|--------------------------------------------------------------------------
+*/
 
 function setupCalendar() {
 
@@ -43,29 +95,35 @@ function setupCalendar() {
       'monthCalendar'
     );
 
+
   if (!calendar) {
     return;
   }
+
 
   var title =
     document.getElementById(
       'calendarTitle'
     );
 
+
   var prev =
     document.getElementById(
       'prevMonth'
     );
+
 
   var next =
     document.getElementById(
       'nextMonth'
     );
 
+
   var events = [];
 
   var month = 7;
   var year = 2026;
+
 
   var firstMonth =
     new Date(
@@ -74,12 +132,14 @@ function setupCalendar() {
       1
     );
 
+
   var lastMonth =
     new Date(
       2027,
       4,
       1
     );
+
 
   var monthNames = [
     'January',
@@ -96,6 +156,7 @@ function setupCalendar() {
     'December'
   ];
 
+
   var dayNames = [
     'Sun',
     'Mon',
@@ -107,23 +168,33 @@ function setupCalendar() {
   ];
 
 
-  function dateKey(y, m, d) {
+  function dateKey(
+    y,
+    m,
+    d
+  ) {
 
     return (
       y +
       '-' +
-      String(m + 1).padStart(2, '0') +
+      String(
+        m + 1
+      ).padStart(2,'0') +
       '-' +
-      String(d).padStart(2, '0')
+      String(d)
+        .padStart(2,'0')
     );
   }
 
 
   function render() {
 
-    calendar.innerHTML = '';
+    calendar.innerHTML =
+      '';
+
 
     if (title) {
+
       title.textContent =
         monthNames[month] +
         ' ' +
@@ -132,22 +203,26 @@ function setupCalendar() {
 
 
     dayNames.forEach(
-      function (name) {
+      function (dayName) {
 
         var heading =
           document.createElement(
             'div'
           );
 
+
         heading.className =
           'calendar-day-name';
 
+
         heading.textContent =
-          name;
+          dayName;
+
 
         calendar.appendChild(
           heading
         );
+
       }
     );
 
@@ -171,7 +246,7 @@ function setupCalendar() {
     for (
       var blank = 0;
       blank < firstDay;
-      blank += 1
+      blank++
     ) {
 
       var spacer =
@@ -179,8 +254,10 @@ function setupCalendar() {
           'div'
         );
 
+
       spacer.className =
         'calendar-cell calendar-blank';
+
 
       calendar.appendChild(
         spacer
@@ -191,7 +268,7 @@ function setupCalendar() {
     for (
       var day = 1;
       day <= daysInMonth;
-      day += 1
+      day++
     ) {
 
       var key =
@@ -207,97 +284,114 @@ function setupCalendar() {
           'div'
         );
 
+
       cell.className =
         'calendar-cell public-calendar-cell';
 
 
-      var dateNumber =
+      var number =
         document.createElement(
           'span'
         );
 
-      dateNumber.className =
+
+      number.className =
         'date-number';
 
-      dateNumber.textContent =
+
+      number.textContent =
         day;
 
+
       cell.appendChild(
-        dateNumber
+        number
       );
 
 
-      var dayEvents =
-        events.filter(
-          function (item) {
+      events
+        .filter(
+          function (event) {
 
             return (
               String(
-                item.date || ''
-              ).trim() === key
+                event.date ||
+                ''
+              ).trim() ===
+              key
             );
+          }
+        )
+
+        .forEach(
+          function (event) {
+
+            var line =
+              document.createElement(
+                'span'
+              );
+
+
+            line.className =
+              'calendar-event public-calendar-event';
+
+
+            var name =
+              event.name ||
+              'Club event';
+
+
+            var time =
+              event.time ||
+              '';
+
+
+            var text =
+              time
+                ? time +
+                  ' ' +
+                  name
+                : name;
+
+
+            var cancelled =
+              event.cancelled === true ||
+              event.cancelled === 1 ||
+              event.cancelled === '1' ||
+              event.cancelled === 'true';
+
+
+            if (cancelled) {
+
+              text =
+                'CANCELLED — ' +
+                text;
+
+
+              line.classList.add(
+                'cancelled-event'
+              );
+            }
+
+
+            line.textContent =
+              text;
+
+
+            if (
+              event.details
+            ) {
+
+              line.title =
+                event.details;
+            }
+
+
+            cell.appendChild(
+              line
+            );
+
           }
         );
-
-
-      dayEvents.forEach(
-        function (item) {
-
-          var eventLine =
-            document.createElement(
-              'span'
-            );
-
-          eventLine.className =
-            'calendar-event public-calendar-event';
-
-
-          var eventName =
-            item.name ||
-            'Club event';
-
-
-          var eventTime =
-            item.time ||
-            '';
-
-
-          var eventText =
-            eventTime
-              ? eventTime +
-                ' ' +
-                eventName
-              : eventName;
-
-
-          if (item.cancelled) {
-
-            eventText =
-              'CANCELLED — ' +
-              eventText;
-
-            eventLine.classList.add(
-              'cancelled-event'
-            );
-          }
-
-
-          eventLine.textContent =
-            eventText;
-
-
-          if (item.details) {
-
-            eventLine.title =
-              item.details;
-          }
-
-
-          cell.appendChild(
-            eventLine
-          );
-        }
-      );
 
 
       calendar.appendChild(
@@ -313,7 +407,8 @@ function setupCalendar() {
           year,
           month,
           1
-        ) <= firstMonth;
+        ) <=
+        firstMonth;
     }
 
 
@@ -324,8 +419,10 @@ function setupCalendar() {
           year,
           month,
           1
-        ) >= lastMonth;
+        ) >=
+        lastMonth;
     }
+
   }
 
 
@@ -335,27 +432,32 @@ function setupCalendar() {
       'click',
       function () {
 
-        var previousMonth =
+        var previous =
           new Date(
             year,
             month - 1,
             1
           );
 
+
         if (
-          previousMonth <
+          previous <
           firstMonth
         ) {
           return;
         }
 
+
         month =
-          previousMonth.getMonth();
+          previous.getMonth();
+
 
         year =
-          previousMonth.getFullYear();
+          previous.getFullYear();
+
 
         render();
+
       }
     );
   }
@@ -367,27 +469,32 @@ function setupCalendar() {
       'click',
       function () {
 
-        var followingMonth =
+        var following =
           new Date(
             year,
             month + 1,
             1
           );
 
+
         if (
-          followingMonth >
+          following >
           lastMonth
         ) {
           return;
         }
 
+
         month =
-          followingMonth.getMonth();
+          following.getMonth();
+
 
         year =
-          followingMonth.getFullYear();
+          following.getFullYear();
+
 
         render();
+
       }
     );
   }
@@ -397,7 +504,8 @@ function setupCalendar() {
     '/api/events.php?nocache=' +
     Date.now(),
     {
-      cache: 'no-store'
+      cache:
+        'no-store'
     }
   )
 
@@ -411,6 +519,7 @@ function setupCalendar() {
         );
       }
 
+
       return response.json();
     }
   )
@@ -422,6 +531,7 @@ function setupCalendar() {
         Array.isArray(data)
           ? data
           : [];
+
 
       render();
     }
@@ -435,7 +545,9 @@ function setupCalendar() {
         error
       );
 
+
       events = [];
+
 
       render();
     }
@@ -443,8 +555,19 @@ function setupCalendar() {
 
 
   render();
+
 }
 
+
+/*
+|--------------------------------------------------------------------------
+| Standard public photo galleries
+|--------------------------------------------------------------------------
+|
+| Team is handled separately by about.html
+| because it needs grouping by year.
+|--------------------------------------------------------------------------
+*/
 
 function setupPhotoGalleries() {
 
@@ -469,7 +592,8 @@ function setupPhotoGalleries() {
           '&nocache=' +
           Date.now(),
           {
-            cache: 'no-store'
+            cache:
+              'no-store'
           }
         )
 
@@ -483,12 +607,17 @@ function setupPhotoGalleries() {
               );
             }
 
+
             return response.json();
           }
         )
 
         .then(
           function (photos) {
+
+            gallery.innerHTML =
+              '';
+
 
             if (
               !Array.isArray(photos) ||
@@ -501,56 +630,83 @@ function setupPhotoGalleries() {
                 '<p>Club photos will be added here as the year continues.</p>' +
                 '</div>';
 
+
               return;
             }
 
 
-            gallery.innerHTML =
-              '';
+            /*
+             * No reverse().
+             *
+             * API/Admin position determines
+             * the display sequence.
+             */
+
+            photos.forEach(
+              function (photo) {
+
+                var figure =
+                  document.createElement(
+                    'figure'
+                  );
 
 
-            photos
-              .slice()
-              .reverse()
-              .forEach(
-                function (photo) {
+                figure.className =
+                  'public-photo-card';
 
-                  var figure =
+
+                var image =
+                  document.createElement(
+                    'img'
+                  );
+
+
+                image.src =
+                  photo.file ||
+                  '';
+
+
+                image.alt =
+                  photo.caption ||
+                  'Sugar Code It photo';
+
+
+                image.loading =
+                  'lazy';
+
+
+                figure.appendChild(
+                  image
+                );
+
+
+                if (
+                  photo.caption
+                ) {
+
+                  var caption =
                     document.createElement(
-                      'figure'
-                    );
-
-                  figure.className =
-                    'public-photo-card';
-
-
-                  figure.innerHTML =
-                    '<img src="' +
-                    escapeText(
-                      photo.file
-                    ) +
-                    '" alt="' +
-                    escapeText(
-                      photo.caption ||
-                      'Sugar Code It photo'
-                    ) +
-                    '">' +
-                    (
-                      photo.caption
-                        ? '<figcaption>' +
-                          escapeText(
-                            photo.caption
-                          ) +
-                          '</figcaption>'
-                        : ''
+                      'figcaption'
                     );
 
 
-                  gallery.appendChild(
-                    figure
+                  caption.textContent =
+                    photo.caption;
+
+
+                  figure.appendChild(
+                    caption
                   );
                 }
-              );
+
+
+                gallery.appendChild(
+                  figure
+                );
+
+              }
+            );
+
           }
         )
 
@@ -562,12 +718,17 @@ function setupPhotoGalleries() {
               error
             );
 
+
             gallery.innerHTML =
-              '';
+              '<div class="empty-state public-photo-empty">' +
+              '<h3>Photos could not be loaded</h3>' +
+              '</div>';
           }
         );
+
       }
     );
+
 }
 
 

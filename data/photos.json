@@ -1,1 +1,551 @@
-[]
+[
+    {
+        "id": "22263e7fd7f62ce4",
+        "section": "impact",
+        "year": "",
+        "caption": "Sugar Code It Ranger Camp Display",
+        "file": "/uploads/photo-04f488d1ba142c866ae2.png",
+        "uploaded": "2026-09-04T00:14:37+00:00",
+        "position": 1
+    },
+    {
+        "id": "82b53103246fbaf6",
+        "section": "impact",
+        "year": "",
+        "caption": "Sharing Sugar Code It with Clements Students",
+        "file": "/uploads/photo-9407376a837d5119d484.png",
+        "uploaded": "2026-09-04T00:51:02+00:00",
+        "position": 2
+    },
+    {
+        "id": "03b43d209061cf13",
+        "section": "meetings",
+        "caption": "Engineering Trivia Kahoot",
+        "file": "/uploads/photo-aa3efd9d78516e852b23.jpg",
+        "uploaded": "2026-09-02T21:56:07+00:00",
+        "position": 1,
+        "year": ""
+    },
+    {
+        "id": "93515a1b3bf8d39a",
+        "section": "meetings",
+        "year": "",
+        "caption": "Engineering Trivia Kahoot",
+        "file": "/uploads/photo-da5d0107d50546f0d486.jpg",
+        "uploaded": "2026-09-03T21:54:50+00:00",
+        "position": 2
+    },
+    {
+        "id": "5069e51c90c103eb",
+        "section": "meetings",
+        "year": "",
+        "caption": "Engineering Trivia Kahoot",
+        "file": "/uploads/photo-79d90e2d5e73faa61463.jpg",
+        "uploaded": "2026-09-03T21:54:50+00:00",
+        "position": 3
+    },
+    {
+        "id": "1966473d9044f27b",
+        "section": "meetings",
+        "caption": "Engineering Trivia Kahoot Winners",
+        "file": "/uploads/photo-ab1d8fac31144ebb22bb.jpg",
+        "uploaded": "2026-09-02T22:15:23+00:00",
+        "position": 4,
+        "year": ""
+    },
+    {
+        "id": "5eb4108dad66f901",
+        "section": "meetings",
+        "year": "",
+        "caption": "",
+        "file": "/uploads/photo-0f2da6aedb0e7edd9f35.png",
+        "uploaded": "2026-09-04T01:05:38+00:00",
+        "position": 5
+    },
+    {
+        "id": "99fcce2025201c83",
+        "section": "meetings",
+        "year": "",
+        "caption": "Electronics & Arduino Kahoot Winner",
+        "file": "/uploads/photo-264188db8c4ea20cf719.png",
+        "uploaded": "2026-09-04T01:05:38+00:00",
+        "position": 6
+    },
+    {
+        "id": "81a9252a7ae6f4c8",
+        "section": "meetings",
+        "year": "",
+        "caption": "",
+        "file": "/uploads/photo-66646514806656922b4c.png",
+        "uploaded": "2026-09-04T01:05:38+00:00",
+        "position": 7
+    },
+    {
+        "id": "936e2d04e8183fff",
+        "section": "meetings",
+        "year": "",
+        "caption": "Marshmallow Bridge,09/17/2026",
+        "file": "/uploads/photo-ed260370b5d31d4cb601.jpg",
+        "uploaded": "2026-09-18T15:48:54+00:00",
+        "position": 8
+    },
+    {
+        "id": "be2a8e7da53013f5",
+        "section": "meetings",
+        "year": "",
+        "caption": "Marshmallow Bridge,09/17/2026",
+        "file": "/uploads/photo-c10dc2a046f5f8b446d4.jpg",
+        "uploaded": "2026-09-18T15:48:54+00:00",
+        "position": 9
+    },
+    {
+        "id": "eb569d74853b006e",
+        "section": "meetings",
+        "year": "",
+        "caption": "Marshmallow Bridge,09/17/2026",
+        "file": "/uploads/photo-015236fc1d56f80ef67c.jpg",
+        "uploaded": "2026-09-18T15:48:54+00:00",
+        "position": 10
+    },
+    {
+        "id": "9d145387d815cc84",
+        "section": "meetings",
+        "year": "",
+        "caption": "Marshmallow Bridge,09/17/2026",
+        "file": "/uploads/photo-7a874d57c68301df4527.jpg",
+        "uploaded": "2026-09-18T15:48:54+00:00",
+        "position": 11
+    },
+    {
+        "id": "c90e0dba5133b162",
+        "section": "meetings",
+        "year": "",
+        "caption": "Marshmallow Bridge,09/17/2026",
+        "file": "/uploads/photo-f877c2c429f715ca6e9c.jpg",
+        "uploaded": "2026-09-18T15:48:54+00:00",
+        "position": 12
+    },
+    {
+        "id": "7238c13f2bed4550",
+        "section": "meetings",
+        "year": "",
+        "caption": "Marshmallow Bridge,09/17/2026",
+        "file": "/uploads/photo-79ba541e73bb4bee2979.jpg",
+        "uploaded": "2026-09-18T15:48:54+00:00",
+        "position": 13
+    },
+    {
+        "id": "3586d8d47147c6a6",
+        "section": "meetings",
+        "year": "",
+        "caption": "Marshmallow Bridge,09/17/2026",
+        "file": "/uploads/photo-86472805cb264cf47078.jpg",
+        "uploaded": "2026-09-18T15:48:54+00:00",
+        "position": 14
+    },
+    {
+        "id": "efbcdbf70db813e3",
+        "section": "meetings",
+        "year": "",
+        "caption": "Marshmallow Bridge,09/17/2026",
+        "file": "/uploads/photo-f7d249928097c0cf487e.jpg",
+        "uploaded": "2026-09-18T15:48:54+00:00",
+        "position": 15
+    },
+    {
+        "id": "70dab688b00a9436",
+        "section": "meetings",
+        "year": "",
+        "caption": "Marshmallow Bridge,09/17/2026",
+        "file": "/uploads/photo-bfd2c6fd1f5a017d9459.jpg",
+        "uploaded": "2026-09-18T15:48:54+00:00",
+        "position": 16
+    },
+    {
+        "id": "5e500cce9516a830",
+        "section": "meetings",
+        "year": "",
+        "caption": "Marshmallow Bridge,09/17/2026",
+        "file": "/uploads/photo-cf3d0230a9b24d700a35.jpg",
+        "uploaded": "2026-09-18T15:48:54+00:00",
+        "position": 17
+    },
+    {
+        "id": "49756a2c2193cc66",
+        "section": "meetings",
+        "year": "",
+        "caption": "Marshmallow Bridge,09/17/2026",
+        "file": "/uploads/photo-b8fa97893c4329e4146f.jpg",
+        "uploaded": "2026-09-18T15:48:54+00:00",
+        "position": 18
+    },
+    {
+        "id": "a9d8839d1dcd9187",
+        "section": "meetings",
+        "year": "",
+        "caption": "Marshmallow Bridge,09/17/2026",
+        "file": "/uploads/photo-aa39f6ef2bef522e756b.jpg",
+        "uploaded": "2026-09-18T15:48:54+00:00",
+        "position": 19
+    },
+    {
+        "id": "faf7ee51309e8c35",
+        "section": "meetings",
+        "year": "",
+        "caption": "Marshmallow Bridge,09/17/2026",
+        "file": "/uploads/photo-4c794d4cea2f272c4066.jpg",
+        "uploaded": "2026-09-18T15:48:54+00:00",
+        "position": 20
+    },
+    {
+        "id": "5362ab7707d66a08",
+        "section": "meetings",
+        "year": "",
+        "caption": "Electronics and Arduino Foundations",
+        "file": "/uploads/photo-a722aa498026a29baa63.jpg",
+        "uploaded": "2026-10-02T23:51:02+00:00",
+        "position": 21
+    },
+    {
+        "id": "20cf702107999b67",
+        "section": "meetings",
+        "year": "",
+        "caption": "Electronics and Arduino Foundations",
+        "file": "/uploads/photo-a937dcdeae7b95b49b67.jpg",
+        "uploaded": "2026-10-02T23:51:02+00:00",
+        "position": 22
+    },
+    {
+        "id": "150b7aa2de4a97c2",
+        "section": "meetings",
+        "year": "",
+        "caption": "Electronics and Arduino Foundations",
+        "file": "/uploads/photo-ad273f33d60f2595d978.jpg",
+        "uploaded": "2026-10-02T23:51:02+00:00",
+        "position": 23
+    },
+    {
+        "id": "f61126c982e40aa5",
+        "section": "meetings",
+        "year": "",
+        "caption": "Electronics and Arduino Foundations",
+        "file": "/uploads/photo-770033dc8307a779bea4.jpg",
+        "uploaded": "2026-10-02T23:51:02+00:00",
+        "position": 24
+    },
+    {
+        "id": "3d1c148b6e53e08a",
+        "section": "meetings",
+        "year": "",
+        "caption": "Electronics and Arduino Foundations",
+        "file": "/uploads/photo-22016903279ce3a80c67.jpg",
+        "uploaded": "2026-10-02T23:51:02+00:00",
+        "position": 25
+    },
+    {
+        "id": "f42aa4801734c99b",
+        "section": "meetings",
+        "year": "",
+        "caption": "Electronics and Arduino Foundations",
+        "file": "/uploads/photo-1534d9818b0886107145.jpg",
+        "uploaded": "2026-10-02T23:51:02+00:00",
+        "position": 26
+    },
+    {
+        "id": "e33650b52d643e9c",
+        "section": "meetings",
+        "year": "",
+        "caption": "Electronics and Arduino Foundations",
+        "file": "/uploads/photo-e73bf9156075865eddd4.jpg",
+        "uploaded": "2026-10-02T23:51:02+00:00",
+        "position": 27
+    },
+    {
+        "id": "c41841659269af28",
+        "section": "meetings",
+        "year": "",
+        "caption": "Electronics and Arduino Foundations",
+        "file": "/uploads/photo-c18c1f6f7786256974ec.jpg",
+        "uploaded": "2026-10-02T23:51:02+00:00",
+        "position": 28
+    },
+    {
+        "id": "d1c6040e3abe2c2a",
+        "section": "meetings",
+        "year": "",
+        "caption": "Electronics and Arduino Foundations",
+        "file": "/uploads/photo-68b9a97830df05fe6518.jpg",
+        "uploaded": "2026-10-02T23:51:02+00:00",
+        "position": 29
+    },
+    {
+        "id": "1853a037a68ef311",
+        "section": "meetings",
+        "year": "",
+        "caption": "Electronics and Arduino Foundations",
+        "file": "/uploads/photo-145e9e39052fe68529fa.jpg",
+        "uploaded": "2026-10-02T23:51:02+00:00",
+        "position": 30
+    },
+    {
+        "id": "74fcc010522314e5",
+        "section": "meetings",
+        "year": "",
+        "caption": "Electronics and Arduino Foundations",
+        "file": "/uploads/photo-82d4c32d255804320f6e.jpg",
+        "uploaded": "2026-10-02T23:51:02+00:00",
+        "position": 31
+    },
+    {
+        "id": "3e3f71c3a16aa596",
+        "section": "meetings",
+        "year": "",
+        "caption": "Electronics and Arduino Foundations",
+        "file": "/uploads/photo-bc18fcade1b86c368ef3.jpg",
+        "uploaded": "2026-10-02T23:51:02+00:00",
+        "position": 32
+    },
+    {
+        "id": "608b56eea63f1c3e",
+        "section": "meetings",
+        "year": "",
+        "caption": "Electronics and Arduino Foundations",
+        "file": "/uploads/photo-aaa6004a8289709f0b07.jpg",
+        "uploaded": "2026-10-02T23:51:02+00:00",
+        "position": 33
+    },
+    {
+        "id": "8f0c7124d309f295",
+        "section": "meetings",
+        "year": "",
+        "caption": "Electronics and Arduino Foundations",
+        "file": "/uploads/photo-49d6526f6d9522636828.jpg",
+        "uploaded": "2026-10-02T23:51:02+00:00",
+        "position": 34
+    },
+    {
+        "id": "76932ae3dbe57eee",
+        "section": "meetings",
+        "year": "",
+        "caption": "Electronics and Arduino Foundations",
+        "file": "/uploads/photo-afb85b2f965ab5139095.jpg",
+        "uploaded": "2026-10-02T23:51:02+00:00",
+        "position": 35
+    },
+    {
+        "id": "0f08659f75ceccb5",
+        "section": "projects",
+        "year": "",
+        "caption": "Marshmallow Bridge Challenge",
+        "file": "/uploads/photo-65649d4af857ab04c41c.png",
+        "uploaded": "2026-09-03T21:26:22+00:00",
+        "position": 1
+    },
+    {
+        "id": "a2b48de828943390",
+        "section": "projects",
+        "year": "",
+        "caption": "Marshmallow Bridge Challenge",
+        "file": "/uploads/photo-7ca6ffd0f4b3a76fad80.png",
+        "uploaded": "2026-09-03T21:26:22+00:00",
+        "position": 2
+    },
+    {
+        "id": "e1e0bc0e078480c4",
+        "section": "projects",
+        "year": "",
+        "caption": "Marshmallow Bridge Challenge",
+        "file": "/uploads/photo-4befc2554377897361b7.png",
+        "uploaded": "2026-09-03T21:26:22+00:00",
+        "position": 3
+    },
+    {
+        "id": "476db165cd314955",
+        "section": "projects",
+        "year": "",
+        "caption": "Edd drop Challenge",
+        "file": "/uploads/photo-0e1169867af39c617d90.png",
+        "uploaded": "2026-09-03T21:33:51+00:00",
+        "position": 4
+    },
+    {
+        "id": "7e37bba8afd5327d",
+        "section": "projects",
+        "year": "",
+        "caption": "Edd drop Challenge",
+        "file": "/uploads/photo-80c2816538a614c2dc2a.png",
+        "uploaded": "2026-09-03T21:27:49+00:00",
+        "position": 5
+    },
+    {
+        "id": "9684448f651c7dc3",
+        "section": "projects",
+        "year": "",
+        "caption": "Load-Bearing Bridge Challenge",
+        "file": "/uploads/photo-2dfa2f48c0a6a5b86e64.png",
+        "uploaded": "2026-09-03T21:42:45+00:00",
+        "position": 6
+    },
+    {
+        "id": "4e8347d48695f2d2",
+        "section": "projects",
+        "year": "",
+        "caption": "Load-Bearing Bridge Challenge",
+        "file": "/uploads/photo-eeac026c6a2bc05ca929.png",
+        "uploaded": "2026-09-03T21:42:45+00:00",
+        "position": 7
+    },
+    {
+        "id": "6c4990729abd4929",
+        "section": "projects",
+        "year": "",
+        "caption": "Load-Bearing Bridge Challenge",
+        "file": "/uploads/photo-a23cec8284997df8428b.png",
+        "uploaded": "2026-09-03T21:42:45+00:00",
+        "position": 8
+    },
+    {
+        "id": "4bc4733e2997c7cf",
+        "section": "projects",
+        "year": "",
+        "caption": "Arduino button and RGB LED",
+        "file": "/uploads/photo-f245bfe52cb731ee9bac.png",
+        "uploaded": "2026-09-03T21:45:50+00:00",
+        "position": 9
+    },
+    {
+        "id": "7a4cfa00d94d9ab3",
+        "section": "projects",
+        "year": "",
+        "caption": "Ultrasonic Distance-Sensing System",
+        "file": "/uploads/photo-fa07c7807726ee6a306d.png",
+        "uploaded": "2026-09-03T21:48:11+00:00",
+        "position": 10
+    },
+    {
+        "id": "d10a59418f741607",
+        "section": "projects",
+        "year": "",
+        "caption": "Advanced Electronics Systems",
+        "file": "/uploads/photo-fe7b6a94bea224b82cf9.png",
+        "uploaded": "2026-09-03T21:49:44+00:00",
+        "position": 11
+    },
+    {
+        "id": "feccc82cf22b5f3c",
+        "section": "projects",
+        "year": "",
+        "caption": "Floating Boat Challenge",
+        "file": "/uploads/photo-98f799396b3a73f9a4e0.png",
+        "uploaded": "2026-09-04T01:03:32+00:00",
+        "position": 12
+    },
+    {
+        "id": "407918c3ad0efbb8",
+        "section": "projects",
+        "year": "",
+        "caption": "Floating Boat Challenge",
+        "file": "/uploads/photo-0a35ecb6da32a7abd87b.png",
+        "uploaded": "2026-09-04T01:03:32+00:00",
+        "position": 13
+    },
+    {
+        "id": "fe4fe8a77a87c9da",
+        "section": "projects",
+        "year": "",
+        "caption": "Floating Boat Challenge",
+        "file": "/uploads/photo-f388284d6c14fe297d33.png",
+        "uploaded": "2026-09-04T01:03:32+00:00",
+        "position": 14
+    },
+    {
+        "id": "9d5cb68eeeefba87",
+        "section": "projects",
+        "year": "",
+        "caption": "Floating Boat Challenge",
+        "file": "/uploads/photo-cfc4019ee4e9b19db32b.png",
+        "uploaded": "2026-09-04T01:03:32+00:00",
+        "position": 15
+    },
+    {
+        "id": "49787d29b4ad1367",
+        "section": "team",
+        "year": "2026-2027",
+        "caption": "",
+        "file": "/uploads/photo-d81580a57b8d0d81012a.png",
+        "uploaded": "2026-09-03T21:14:06+00:00",
+        "position": 1
+    },
+    {
+        "id": "80329e519c1e24a2",
+        "section": "team",
+        "year": "2026-2027",
+        "caption": "",
+        "file": "/uploads/photo-1277bb0d7b355117869b.png",
+        "uploaded": "2026-09-02T23:57:40+00:00",
+        "position": 2
+    },
+    {
+        "id": "297a642c3cbef70b",
+        "section": "team",
+        "year": "2026-2027",
+        "caption": "",
+        "file": "/uploads/photo-463d7f699cee5991e72e.png",
+        "uploaded": "2026-09-02T23:57:41+00:00",
+        "position": 3
+    },
+    {
+        "id": "a6877ccd2a74a4c6",
+        "section": "team",
+        "year": "2026-2027",
+        "caption": "",
+        "file": "/uploads/photo-adfa04dfc15fa19961d6.png",
+        "uploaded": "2026-09-02T23:57:41+00:00",
+        "position": 4
+    },
+    {
+        "id": "2ecf16178d745ba9",
+        "section": "team",
+        "year": "2026-2027",
+        "caption": "",
+        "file": "/uploads/photo-a6cb781c8a1caeab059a.png",
+        "uploaded": "2026-09-02T23:57:41+00:00",
+        "position": 5
+    },
+    {
+        "id": "98009b068f93bffc",
+        "section": "team",
+        "year": "2026-2027",
+        "caption": "",
+        "file": "/uploads/photo-7f570fdc00c9e1633c9d.png",
+        "uploaded": "2026-09-02T23:57:41+00:00",
+        "position": 6
+    },
+    {
+        "id": "1b09557e0873d510",
+        "section": "team",
+        "year": "2026-2027",
+        "caption": "",
+        "file": "/uploads/photo-0c9c26c06e2e370c5f55.png",
+        "uploaded": "2026-09-02T23:57:41+00:00",
+        "position": 7
+    },
+    {
+        "id": "3029e7b4cfc879d2",
+        "section": "team",
+        "year": "2026-2027",
+        "caption": "",
+        "file": "/uploads/photo-48418be385a29ae1da25.png",
+        "uploaded": "2026-09-02T23:57:41+00:00",
+        "position": 8
+    },
+    {
+        "id": "120e2cb7bd0c0368",
+        "section": "team",
+        "caption": "",
+        "file": "/uploads/photo-74725472d86ce447daa0.png",
+        "uploaded": "2026-09-02T22:29:12+00:00",
+        "position": 1,
+        "year": "2025-2026"
+    }
+]

@@ -2005,19 +2005,3 @@ button:disabled {
     font-size: 13px;
   }
 }
-
-/* Cancelled calendar events */
-.cancelled-event {
-  text-decoration: line-through;
-  opacity: 0.65;
-  background: #ffe0e0;
-  color: #8f2e35;
-}
-
-.cancelled-admin-event {
-  opacity: 0.7;
-}
-
-.cancelled-admin-event h3 {
-  text-decoration: line-through;
-}

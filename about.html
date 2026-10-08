@@ -1,134 +1,1032 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>About | Sugar Code It</title>
-  <link rel="stylesheet" href="/styles.css">
+
+<meta charset="utf-8">
+
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1"
+>
+
+<title>About | Sugar Code It</title>
+
+<meta
+  name="description"
+  content="Learn about the mission and student leadership of Sugar Code It at Clements High School."
+>
+
+<link
+  rel="stylesheet"
+  href="/styles.css"
+>
+
+
+<style>
+
+/* ================================================================
+   ABOUT PAGE
+   ================================================================ */
+
+.simple-about {
+    padding-top: 70px;
+    padding-bottom: 90px;
+}
+
+
+/* ================================================================
+   MISSION
+   ================================================================ */
+
+.mission-section {
+    padding-bottom: 80px;
+}
+
+.mission-copy {
+    max-width: 760px;
+}
+
+.mission-copy h1 {
+    margin-top: 10px;
+    margin-bottom: 18px;
+
+    font-size: clamp(
+        2.4rem,
+        5vw,
+        4.5rem
+    );
+
+    line-height: 1.02;
+}
+
+.mission-copy p {
+    max-width: 700px;
+    margin: 0;
+
+    font-size: 1.22rem;
+    line-height: 1.75;
+
+    color: var(--muted);
+}
+
+
+/* ================================================================
+   TEAM
+   ================================================================ */
+
+.team-section {
+    padding-top: 30px;
+
+    border-top:
+        1px solid
+        rgba(255, 255, 255, 0.10);
+}
+
+.team-intro {
+    margin-bottom: 45px;
+}
+
+.team-intro h2 {
+    margin-top: 9px;
+    margin-bottom: 0;
+
+    font-size: clamp(
+        2.3rem,
+        4vw,
+        3.8rem
+    );
+}
+
+
+/* ================================================================
+   YEAR GROUPS
+   ================================================================ */
+
+.team-year-section {
+    margin-top: 58px;
+}
+
+.team-year-section:first-child {
+    margin-top: 0;
+}
+
+.team-year-heading {
+    display: flex;
+    align-items: center;
+
+    gap: 18px;
+
+    margin-bottom: 26px;
+}
+
+.team-year-heading h3 {
+    margin: 0;
+
+    flex-shrink: 0;
+
+    font-size: 1.45rem;
+}
+
+.team-year-line {
+    width: 100%;
+    height: 1px;
+
+    background:
+        rgba(255, 255, 255, 0.12);
+}
+
+
+/* ================================================================
+   TEAM PHOTOS
+   ================================================================ */
+
+.team-year-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            4,
+            minmax(0, 1fr)
+        );
+
+    gap: 22px;
+
+    align-items: start;
+}
+
+.team-card {
+    margin: 0;
+
+    overflow: hidden;
+
+    background: #102239;
+
+    border:
+        1px solid
+        rgba(111, 134, 255, 0.24);
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 18px 42px
+        rgba(0, 0, 0, 0.18);
+}
+
+.team-card img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+}
+
+.team-card figcaption {
+    padding: 14px 16px 16px;
+
+    color: #dbe4f1;
+
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+
+/* ================================================================
+   SINGLE OLD TEAM POSTER
+   ================================================================ */
+
+.team-year-grid.single-team-image {
+    display: block;
+}
+
+.team-year-grid.single-team-image .team-card {
+    width: min(680px, 100%);
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* ================================================================
+   WEBSITE RESPONSIBILITY NOTE
+   Slightly larger than previous version
+   ================================================================ */
+
+.webmaster-note {
+    width: min(720px, 100%);
+
+    margin: 18px auto 0;
+
+    padding: 24px 26px;
+
+    background: #10243b;
+
+    border:
+        1px solid
+        rgba(111, 134, 255, 0.32);
+
+    border-radius: 12px;
+}
+
+.webmaster-note strong {
+    display: block;
+
+    color: #ffffff;
+
+    font-size: 1.22rem;
+    line-height: 1.35;
+}
+
+.webmaster-role {
+    display: block;
+
+    margin-top: 5px;
+
+    color: #9eabff;
+
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.webmaster-note p {
+    margin: 12px 0 0;
+
+    color: var(--muted);
+
+    font-size: 1.04rem;
+    line-height: 1.65;
+}
+
+
+/* ================================================================
+   LOADING
+   ================================================================ */
+
+.team-loading {
+    padding: 32px;
+
+    border:
+        1px dashed
+        rgba(255, 255, 255, 0.15);
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    color: var(--muted);
+}
+
+
+/* ================================================================
+   RESPONSIVE
+   ================================================================ */
+
+@media (max-width: 1050px) {
+
+    .team-year-grid {
+        grid-template-columns:
+            repeat(
+                3,
+                minmax(0, 1fr)
+            );
+    }
+
+}
+
+
+@media (max-width: 760px) {
+
+    .team-year-grid {
+        grid-template-columns:
+            repeat(
+                2,
+                minmax(0, 1fr)
+            );
+    }
+
+}
+
+
+@media (max-width: 520px) {
+
+    .simple-about {
+        padding-top: 50px;
+    }
+
+    .mission-section {
+        padding-bottom: 60px;
+    }
+
+    .team-year-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .webmaster-note {
+        padding: 19px 20px;
+    }
+
+    .webmaster-note strong {
+        font-size: 1.08rem;
+    }
+
+    .webmaster-role {
+        font-size: 0.94rem;
+    }
+
+    .webmaster-note p {
+        font-size: 0.95rem;
+    }
+
+}
+
+</style>
+
 </head>
+
+
+
 <body>
-  <header class="nav">
-    <div class="container navin">
-      <a class="brand" href="/index.html">
-        <img src="/assets/logo.png" alt="Sugar Code It logo">
-        <span>Sugar Code It</span>
-      </a>
-      <button class="menu" aria-label="Open navigation" aria-expanded="false">Menu</button>
-      <nav class="links">
-        <a href="/index.html">Home</a>
-        <a href="/about.html">About</a>
-        <a href="/meetings.html">Meetings</a>
-        <a href="/calendar.html">Calendar</a>
-        <a href="/learn.html">Learn</a>
-        <a href="/projects.html">Projects</a>
-        <a href="/impact.html">Impact</a>
-        <a href="/roadmap.html">Road Map</a>
-        <a href="/join.html">Join</a>
-      </nav>
-    </div>
-  </header>
 
-  <main>
-    <div class="breadcrumb-wrap">
-      <nav class="breadcrumb container" aria-label="Breadcrumb">
-        <a href="/index.html">Home</a>
-        <span class="breadcrumb-separator">/</span>
-        <span aria-current="page">About</span>
-      </nav>
-    </div>
 
-    <section class="page-hero">
-      <div class="container">
-        <span class="eyebrow">About us</span>
-        <h1>Engineering should be something you do.</h1>
-        <p>Sugar Code It gives Clements students a place to explore coding, electronics and engineering through hands-on learning, collaborative projects and community service.</p>
-      </div>
-    </section>
 
-    <section>
-      <div class="container grid2">
-        <div class="card">
-          <h2>Our mission</h2>
-          <p>Make technical learning approachable, practical and collaborative. New members should be able to walk in with curiosity, learn a skill, contribute to a team and leave with something they actually built.</p>
-        </div>
-        <div class="photo-card card">
-          <img src="/assets/meeting-2.jpg" alt="Students attending Sugar Code It">
-          <div class="copy">
-            <h3>Open to all grade levels</h3>
-            <p>Beginners are welcome. Experience helps, but curiosity and willingness to participate matter more.</p>
-          </div>
-        </div>
-      </div>
-    </section>
+<!-- ================================================================
+     NAVIGATION
+     ================================================================ -->
 
-    <section class="light-section">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <span class="eyebrow">Our team</span>
-            <h2>Students building together.</h2>
-          </div>
-        </div>
-        <div class="grid3">
-          <div class="card">
-            <h3>Learn</h3>
-            <p>Members build practical skills through workshops, demonstrations and hands-on activities.</p>
-          </div>
-          <div class="card">
-            <h3>Build</h3>
-            <p>Teams turn ideas into coding, Arduino, electronics and engineering projects.</p>
-          </div>
-          <div class="card">
-            <h3>Share</h3>
-            <p>Students help each other learn and use technical skills for school and community projects.</p>
-          </div>
-        </div>
-      </div>
-    </section>
+<header class="nav">
 
-    <section>
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <span class="eyebrow">Club photos</span>
-            <h2>Inside Sugar Code It.</h2>
-          </div>
-        </div>
-        <div class="public-photo-grid" data-photo-section="about"></div>
-      </div>
-    </section>
+<div class="container navin">
 
-    <section>
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <span class="eyebrow">Leadership history</span>
-            <h2>Growing the club since 2025.</h2>
-          </div>
-        </div>
-        <div class="timeline">
-          <div class="time-item">
-            <div class="year">2025</div>
-            <h3>Website and digital foundation</h3>
-            <p>Mohid Latif served as Webmaster, developing the club's online presence and helping make meetings, activities and opportunities easier for students to discover.</p>
-          </div>
-          <div class="time-item">
-            <div class="year">2026-2027</div>
-            <h3>Expanded student leadership</h3>
-            <p>The website evolves into a full club hub for learning resources, projects, impact tracking, meetings and the club road map.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
 
-  <footer class="footer">
-    <div class="container footer-grid">
-      <div><strong style="color:white">Sugar Code It</strong><br>Clements High School | Sugar Land, Texas</div>
-      <div>Arduino | Electrical | Biomedical | Engineering</div>
-      <div>chssugarcodeit@gmail.com</div>
-    </div>
-  </footer>
-  <script src="/script.js"></script>
+<a
+  class="brand"
+  href="/index.html"
+>
+
+<img
+  src="/assets/logo.png"
+  alt="Sugar Code It logo"
+>
+
+<span>
+Sugar Code It
+</span>
+
+</a>
+
+
+<button
+  class="menu"
+  type="button"
+  aria-expanded="false"
+  aria-label="Open navigation"
+>
+
+Menu
+
+</button>
+
+
+<nav class="links">
+
+<a href="/index.html">
+Home
+</a>
+
+<a
+  class="active"
+  href="/about.html"
+>
+About
+</a>
+
+<a href="/meetings.html">
+Meetings
+</a>
+
+<a href="/calendar.html">
+Calendar
+</a>
+
+<a href="/learn.html">
+Learn
+</a>
+
+<a href="/projects.html">
+Projects
+</a>
+
+<a href="/impact.html">
+Impact
+</a>
+
+<a href="/roadmap.html">
+Road Map
+</a>
+
+<a href="/join.html">
+Join
+</a>
+
+</nav>
+
+
+</div>
+
+</header>
+
+
+
+<!-- ================================================================
+     PAGE
+     ================================================================ -->
+
+<main class="simple-about">
+
+
+
+<!-- ================================================================
+     MISSION
+     ================================================================ -->
+
+<section class="mission-section">
+
+<div class="container">
+
+
+<div class="mission-copy">
+
+
+<span class="eyebrow">
+Our Mission
+</span>
+
+
+<h1>
+Learn. Build. Solve.
+</h1>
+
+
+<p>
+Create opportunities for students to develop
+technical and problem-solving skills through
+hands-on STEM projects.
+</p>
+
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- ================================================================
+     TEAM
+     ================================================================ -->
+
+<section class="team-section">
+
+<div class="container">
+
+
+<div class="team-intro">
+
+
+<span class="eyebrow">
+Our Team
+</span>
+
+
+<h2>
+Meet the Team
+</h2>
+
+
+</div>
+
+
+<div id="teamYearGroups">
+
+<div class="team-loading">
+Loading team...
+</div>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+</main>
+
+
+
+<!-- ================================================================
+     FOOTER
+     ================================================================ -->
+
+<footer class="footer">
+
+<div class="container footer-grid">
+
+
+<div>
+
+<strong style="color:white">
+Sugar Code It
+</strong>
+
+<br>
+
+Clements High School |
+Sugar Land, Texas
+
+</div>
+
+
+<div>
+
+Arduino |
+Electrical |
+Biomedical |
+Engineering
+
+</div>
+
+
+<div>
+
+chssugarcodeit@gmail.com
+
+</div>
+
+
+</div>
+
+</footer>
+
+
+
+<!-- ================================================================
+     NORMAL SITE JAVASCRIPT
+     ================================================================ -->
+
+<script src="/script.js?v=35"></script>
+
+
+
+<!-- ================================================================
+     TEAM DISPLAY
+     ================================================================ -->
+
+<script>
+
+(function () {
+
+
+    var container =
+        document.getElementById(
+            'teamYearGroups'
+        );
+
+
+    if (!container) {
+        return;
+    }
+
+
+
+    fetch(
+        '/api/photos.php?section=team&nocache=' +
+        Date.now(),
+        {
+            cache:
+                'no-store'
+        }
+    )
+
+
+    .then(
+        function (response) {
+
+
+            if (!response.ok) {
+
+                throw new Error(
+                    'Could not load team photos.'
+                );
+
+            }
+
+
+            return response.json();
+
+        }
+    )
+
+
+    .then(
+        function (photos) {
+
+
+            container.innerHTML =
+                '';
+
+
+            if (
+                !Array.isArray(
+                    photos
+                ) ||
+                photos.length ===
+                0
+            ) {
+
+
+                container.innerHTML =
+                    '<div class="team-loading">' +
+                    'Team photos will appear here.' +
+                    '</div>';
+
+
+                return;
+
+            }
+
+
+
+            /* ========================================================
+               GROUP PHOTOS BY YEAR
+               ======================================================== */
+
+            var groups = {};
+
+
+            photos.forEach(
+                function (photo) {
+
+
+                    var year =
+                        String(
+                            photo.year ||
+                            ''
+                        ).trim();
+
+
+                    if (!year) {
+
+                        year =
+                            'Year not set';
+
+                    }
+
+
+                    if (!groups[year]) {
+
+                        groups[year] =
+                            [];
+
+                    }
+
+
+                    groups[year].push(
+                        photo
+                    );
+
+                }
+            );
+
+
+
+            /* ========================================================
+               NEWEST YEAR FIRST
+               ======================================================== */
+
+            var years =
+                Object.keys(
+                    groups
+                );
+
+
+            years.sort(
+                function (a, b) {
+
+
+                    if (
+                        a ===
+                        'Year not set'
+                    ) {
+
+                        return 1;
+
+                    }
+
+
+                    if (
+                        b ===
+                        'Year not set'
+                    ) {
+
+                        return -1;
+
+                    }
+
+
+                    return b.localeCompare(
+                        a
+                    );
+
+                }
+            );
+
+
+
+            /* ========================================================
+               BUILD YEAR SECTIONS
+               ======================================================== */
+
+            years.forEach(
+                function (year) {
+
+
+                    var yearPhotos =
+                        groups[year];
+
+
+                    yearPhotos.sort(
+                        function (a, b) {
+
+
+                            return (
+                                Number(
+                                    a.position ||
+                                    999999
+                                )
+                                -
+                                Number(
+                                    b.position ||
+                                    999999
+                                )
+                            );
+
+                        }
+                    );
+
+
+
+                    /* YEAR SECTION */
+
+                    var yearSection =
+                        document.createElement(
+                            'div'
+                        );
+
+
+                    yearSection.className =
+                        'team-year-section';
+
+
+
+                    /* YEAR HEADING */
+
+                    var heading =
+                        document.createElement(
+                            'div'
+                        );
+
+
+                    heading.className =
+                        'team-year-heading';
+
+
+
+                    var title =
+                        document.createElement(
+                            'h3'
+                        );
+
+
+                    title.textContent =
+                        year;
+
+
+
+                    var line =
+                        document.createElement(
+                            'div'
+                        );
+
+
+                    line.className =
+                        'team-year-line';
+
+
+
+                    heading.appendChild(
+                        title
+                    );
+
+
+                    heading.appendChild(
+                        line
+                    );
+
+
+                    yearSection.appendChild(
+                        heading
+                    );
+
+
+
+                    /* TEAM PHOTO GRID */
+
+                    var grid =
+                        document.createElement(
+                            'div'
+                        );
+
+
+                    grid.className =
+                        'team-year-grid';
+
+
+
+                    if (
+                        yearPhotos.length ===
+                        1
+                    ) {
+
+                        grid.classList.add(
+                            'single-team-image'
+                        );
+
+                    }
+
+
+
+                    yearPhotos.forEach(
+                        function (photo) {
+
+
+                            var card =
+                                document.createElement(
+                                    'figure'
+                                );
+
+
+                            card.className =
+                                'team-card';
+
+
+
+                            var image =
+                                document.createElement(
+                                    'img'
+                                );
+
+
+                            image.src =
+                                photo.file ||
+                                '';
+
+
+                            image.alt =
+                                photo.caption ||
+                                (
+                                    'Sugar Code It Team ' +
+                                    year
+                                );
+
+
+                            image.loading =
+                                'lazy';
+
+
+
+                            card.appendChild(
+                                image
+                            );
+
+
+
+                            if (
+                                photo.caption
+                            ) {
+
+
+                                var caption =
+                                    document.createElement(
+                                        'figcaption'
+                                    );
+
+
+                                caption.textContent =
+                                    photo.caption;
+
+
+                                card.appendChild(
+                                    caption
+                                );
+
+                            }
+
+
+
+                            grid.appendChild(
+                                card
+                            );
+
+                        }
+                    );
+
+
+                    yearSection.appendChild(
+                        grid
+                    );
+
+
+
+                    /* =================================================
+                       MOHID WEBSITE RESPONSIBILITY
+                       ================================================= */
+
+                    if (
+                        year === '2025-2026' ||
+                        year === '2025–2026'
+                    ) {
+
+
+                        var webmasterNote =
+                            document.createElement(
+                                'div'
+                            );
+
+
+                        webmasterNote.className =
+                            'webmaster-note';
+
+
+                        webmasterNote.innerHTML =
+                            '<strong>' +
+                            'Mohid Latif' +
+                            '</strong>' +
+
+                            '<span class="webmaster-role">' +
+                            'Webmaster (2025–2026) · Vice-President (2026–Present)' +
+                            '</span>' +
+
+                            '<p>' +
+                            'Designed and developed the Sugar Code It website and continues to manage updates, maintenance, and technical troubleshooting.' +
+                            '</p>';
+
+
+                        yearSection.appendChild(
+                            webmasterNote
+                        );
+
+                    }
+
+
+
+                    container.appendChild(
+                        yearSection
+                    );
+
+                }
+            );
+
+        }
+    )
+
+
+    .catch(
+        function (error) {
+
+
+            console.error(
+                'Team photo error:',
+                error
+            );
+
+
+            container.innerHTML =
+                '<div class="team-loading">' +
+                'Team photos could not be loaded.' +
+                '</div>';
+
+        }
+    );
+
+
+}());
+
+</script>
+
+
 </body>
+
 </html>

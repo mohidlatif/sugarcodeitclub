@@ -1,256 +1,810 @@
 <!DOCTYPE html>
 <html lang="en">
- <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width,initial-scale=1" name="viewport"/>
-  <title>
-   Meetings | Sugar Code It
-  </title>
-  <link href="/styles.css" rel="stylesheet"/>
- </head>
- <body>
-  <header class="nav">
-   <div class="container navin">
-    <a class="brand" href="/index.html">
-     <img alt="Sugar Code It logo" src="/assets/logo.png"/>
-     <span>
-      Sugar Code It
-     </span>
-    </a>
-    <button aria-label="Open navigation" class="menu">
-     Menu
-    </button>
-    <nav class="links">
-     <a href="/index.html">
-      Home
-     </a>
-     <a href="/about.html">
-      About
-     </a>
-     <a href="/meetings.html">
-      Meetings
-     </a>
-     <a href="/calendar.html">
-      Calendar
-     </a>
-     <a href="/learn.html">
-      Learn
-     </a>
-     <a href="/projects.html">
-      Projects
-     </a>
-     <a href="/impact.html">
-      Impact
-     </a>
-     <a href="/roadmap.html">
-      Road Map
-     </a>
-     <a href="/join.html">
-      Join
-     </a>
-    </nav>
-   </div>
-  </header>
-  <main>
-    <div class="breadcrumb-wrap">
-      <nav class="breadcrumb container" aria-label="Breadcrumb">
-        <a href="/index.html">Home</a>
-        <span class="breadcrumb-separator">/</span>
-        <span aria-current="page">Meetings</span>
-      </nav>
+
+<head>
+
+    <meta charset="utf-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1"
+    >
+
+    <title>
+        Meetings | Sugar Code It
+    </title>
+
+    <meta
+        name="description"
+        content="Sugar Code It meets every other Thursday at Clements High School for technical lessons, engineering challenges and hands-on project work."
+    >
+
+    <link
+        rel="stylesheet"
+        href="/styles.css"
+    >
+
+
+    <style>
+
+        /*
+        ============================================================
+        MEETINGS PAGE
+        Uses the same colors and card language as the rest
+        of the Sugar Code It website.
+        ============================================================
+        */
+
+        .meetings-page {
+            background: #071525;
+            color: #ffffff;
+        }
+
+
+        /*
+        ============================================================
+        INTRO
+        ============================================================
+        */
+
+        .meetings-intro {
+            padding: 72px 0 48px;
+        }
+
+
+        .meetings-intro-copy {
+            max-width: 760px;
+        }
+
+
+        .meetings-intro h1 {
+            margin-top: 10px;
+            margin-bottom: 18px;
+
+            font-size: clamp(
+                2.7rem,
+                5vw,
+                4.6rem
+            );
+
+            line-height: 1.02;
+        }
+
+
+        .meetings-intro-copy > p {
+            max-width: 720px;
+
+            margin: 0;
+
+            color: var(--muted);
+
+            font-size: 1.08rem;
+            line-height: 1.7;
+        }
+
+
+        /*
+        ============================================================
+        WHEN / WHERE / SPONSOR
+        ============================================================
+        */
+
+        .meeting-info-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(
+                    3,
+                    minmax(0, 1fr)
+                );
+
+            gap: 18px;
+
+            margin-top: 42px;
+        }
+
+
+        .meeting-info-card {
+            padding: 24px;
+
+            background: #10243b;
+
+            border:
+                1px solid
+                rgba(
+                    111,
+                    134,
+                    255,
+                    0.24
+                );
+
+            border-radius: 16px;
+        }
+
+
+        .meeting-info-card h3 {
+            margin: 0 0 12px;
+
+            font-size: 1rem;
+        }
+
+
+        .meeting-info-card p {
+            margin: 0;
+
+            color: var(--muted);
+
+            line-height: 1.55;
+        }
+
+
+        .meeting-info-card strong {
+            color: #ffffff;
+        }
+
+
+        /*
+        ============================================================
+        MEETING FORMAT
+        ============================================================
+        */
+
+        .meeting-format-section {
+            padding: 40px 0 72px;
+        }
+
+
+        .meeting-format-heading {
+            margin-bottom: 28px;
+        }
+
+
+        .meeting-format-heading h2 {
+            margin-top: 9px;
+            margin-bottom: 0;
+
+            font-size: clamp(
+                2rem,
+                4vw,
+                3rem
+            );
+        }
+
+
+        .meeting-format-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(
+                    3,
+                    minmax(0, 1fr)
+                );
+
+            gap: 18px;
+        }
+
+
+        .meeting-format-card {
+            min-height: 190px;
+
+            padding: 24px;
+
+            background: #10243b;
+
+            border:
+                1px solid
+                rgba(
+                    111,
+                    134,
+                    255,
+                    0.24
+                );
+
+            border-radius: 16px;
+        }
+
+
+        .meeting-format-time {
+            display: block;
+
+            margin-bottom: 14px;
+
+            color: #ffffff;
+
+            font-size: 1.8rem;
+            font-weight: 800;
+        }
+
+
+        .meeting-format-card h3 {
+            margin: 0 0 10px;
+
+            font-size: 1.05rem;
+        }
+
+
+        .meeting-format-card p {
+            margin: 0;
+
+            color: var(--muted);
+
+            line-height: 1.6;
+        }
+
+
+        /*
+        ============================================================
+        PHOTO SECTION
+        All meeting photos appear here.
+        ============================================================
+        */
+
+        .meeting-photos-section {
+            padding: 72px 0 90px;
+
+            border-top:
+                1px solid
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.08
+                );
+        }
+
+
+        .meeting-photo-heading {
+            margin-bottom: 30px;
+        }
+
+
+        .meeting-photo-heading h2 {
+            margin-top: 9px;
+            margin-bottom: 0;
+
+            font-size: clamp(
+                2rem,
+                4vw,
+                3rem
+            );
+        }
+
+
+        /*
+        Existing script.js places uploaded
+        meeting photos into this grid.
+        */
+
+        .meeting-photo-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(
+                    3,
+                    minmax(0, 1fr)
+                );
+
+            gap: 20px;
+        }
+
+
+        .meeting-photo-grid .public-photo-card {
+            margin: 0;
+
+            overflow: hidden;
+
+            background: #10243b;
+
+            border:
+                1px solid
+                rgba(
+                    111,
+                    134,
+                    255,
+                    0.22
+                );
+
+            border-radius: 16px;
+        }
+
+
+        .meeting-photo-grid .public-photo-card img {
+            display: block;
+
+            width: 100%;
+            height: 250px;
+
+            object-fit: cover;
+        }
+
+
+        .meeting-photo-grid .public-photo-card figcaption {
+            padding: 13px 15px;
+
+            color: #dce5f2;
+
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+
+
+        /*
+        ============================================================
+        RESPONSIVE
+        ============================================================
+        */
+
+        @media (max-width: 850px) {
+
+            .meeting-info-grid,
+            .meeting-format-grid,
+            .meeting-photo-grid {
+                grid-template-columns:
+                    repeat(
+                        2,
+                        minmax(0, 1fr)
+                    );
+            }
+
+        }
+
+
+        @media (max-width: 580px) {
+
+            .meetings-intro {
+                padding-top: 52px;
+            }
+
+
+            .meeting-info-grid,
+            .meeting-format-grid,
+            .meeting-photo-grid {
+                grid-template-columns: 1fr;
+            }
+
+
+            .meeting-photo-grid
+            .public-photo-card img {
+                height: auto;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body class="meetings-page">
+
+
+
+<!-- ==============================================================
+     NAVIGATION
+     ============================================================== -->
+
+<header class="nav">
+
+    <div class="container navin">
+
+
+        <a
+            class="brand"
+            href="/index.html"
+        >
+
+            <img
+                src="/assets/logo.png"
+                alt="Sugar Code It logo"
+            >
+
+            <span>
+                Sugar Code It
+            </span>
+
+        </a>
+
+
+
+        <button
+            class="menu"
+            type="button"
+            aria-expanded="false"
+            aria-label="Open navigation"
+        >
+            Menu
+        </button>
+
+
+
+        <nav class="links">
+
+            <a href="/index.html">
+                Home
+            </a>
+
+            <a href="/about.html">
+                About
+            </a>
+
+            <a
+                class="active"
+                href="/meetings.html"
+            >
+                Meetings
+            </a>
+
+            <a href="/calendar.html">
+                Calendar
+            </a>
+
+            <a href="/learn.html">
+                Learn
+            </a>
+
+            <a href="/projects.html">
+                Projects
+            </a>
+
+            <a href="/impact.html">
+                Impact
+            </a>
+
+            <a href="/roadmap.html">
+                Road Map
+            </a>
+
+            <a href="/join.html">
+                Join
+            </a>
+
+        </nav>
+
+
     </div>
 
-   <section class="page-hero">
+</header>
+
+
+
+<main>
+
+
+
+<!-- ==============================================================
+     MEETING INTRO
+     ============================================================== -->
+
+<section class="meetings-intro">
+
     <div class="container">
-     <span class="eyebrow">
-      Meetings
-     </span>
-     <h1>
-      Show up. Learn something. Build something.
-     </h1>
-     <p>
-      Regular meetings are designed around a short skill lesson followed by hands-on work, team activities or project development.
-     </p>
+
+
+        <div class="meetings-intro-copy">
+
+
+            <span class="eyebrow">
+                Meetings
+            </span>
+
+
+            <h1>
+                Club Meetings
+            </h1>
+
+
+            <p>
+                Sugar Code It members meet every other Thursday for a short
+    technical lesson followed by hands-on Arduino,
+    coding, and engineering activities, challenges,
+    or project work.
+            </p>
+
+
+        </div>
+
+
+
+        <!-- ======================================================
+             WHEN / WHERE / SPONSOR
+             ====================================================== -->
+
+        <div class="meeting-info-grid">
+
+
+
+            <article class="meeting-info-card">
+
+                <h3>
+                    When
+                </h3>
+
+                <p>
+                    Every other Thursday
+                    <br>
+                    <strong>
+                        3:00–4:00 PM
+                    </strong>
+                </p>
+
+            </article>
+
+
+
+            <article class="meeting-info-card">
+
+                <h3>
+                    Where
+                </h3>
+
+                <p>
+                    Clements High School
+                    <br>
+                    <strong>
+                        Room 2102
+                    </strong>
+                </p>
+
+            </article>
+
+
+
+            <article class="meeting-info-card">
+
+                <h3>
+                    Sponsor
+                </h3>
+
+                <p>
+                                <br>
+                    <strong>
+                        Ms. Holm
+                    </strong>
+                </p>
+
+            </article>
+
+
+        </div>
+
+
     </div>
-   </section>
-   <section>
-    <div class="container grid3">
-     <div class="card">
-      <h3>
-       When
-      </h3>
-      <p>
-       Every other Thursday
-       <br/>
-       <strong style="color:white">
-        3:00-4:00 PM
-       </strong>
-      </p>
-     </div>
-     <div class="card">
-      <h3>
-       Where
-      </h3>
-      <p>
-       Clements High School
-       <br/>
-       <strong style="color:white">
-        Room 2102
-       </strong>
-      </p>
-     </div>
-     <div class="card">
-      <h3>
-       Sponsor
-      </h3>
-      <p>
-       Club sponsor
-       <br/>
-       <strong style="color:white">
-        Ms. Holm
-       </strong>
-      </p>
-     </div>
-    </div>
-   </section>
-   <section>
+
+</section>
+
+
+
+<!-- ==============================================================
+     MEETING FORMAT
+     ============================================================== -->
+
+<section class="meeting-format-section">
+
     <div class="container">
-     <div class="section-head">
-      <div>
-       <span class="eyebrow">
-        Meeting format
-       </span>
-       <h2>
-        One hour, used well.
-       </h2>
-      </div>
-     </div>
-     <div class="grid3">
-      <div class="card">
-       <div class="metric">
-        10m
-       </div>
-       <h3>
-        Kickoff
-       </h3>
-       <p>
-        Announcements, goals and a quick overview of the day's technical idea.
-       </p>
-      </div>
-      <div class="card">
-       <div class="metric">
-        20m
-       </div>
-       <h3>
-        Learn
-       </h3>
-       <p>
-        A focused lesson or live demonstration in coding, circuitry or engineering.
-       </p>
-      </div>
-      <div class="card">
-       <div class="metric">
-        30m
-       </div>
-       <h3>
-        Build
-       </h3>
-       <p>
-        Hands-on activity, challenge or dedicated project-team work.
-       </p>
-      </div>
-     </div>
+
+
+        <div class="meeting-format-heading">
+
+
+            <span class="eyebrow">
+                Meeting Format
+            </span>
+
+
+            <h2>
+                How each meeting works.
+            </h2>
+
+
+        </div>
+
+
+
+        <div class="meeting-format-grid">
+
+
+
+            <!-- KICKOFF -->
+
+            <article class="meeting-format-card">
+
+
+                <span class="meeting-format-time">
+                    10m
+                </span>
+
+
+                <h3>
+                    Kickoff
+                </h3>
+
+
+                <p>
+                    Announcements, goals and a quick overview
+                    of the day's technical idea.
+                </p>
+
+
+            </article>
+
+
+
+            <!-- LEARN -->
+
+            <article class="meeting-format-card">
+
+
+                <span class="meeting-format-time">
+                    20m
+                </span>
+
+
+                <h3>
+                    Learn
+                </h3>
+
+
+                <p>
+                    A focused lesson or live demonstration
+                    in coding, circuitry or engineering.
+                </p>
+
+
+            </article>
+
+
+
+            <!-- BUILD -->
+
+            <article class="meeting-format-card">
+
+
+                <span class="meeting-format-time">
+                    30m
+                </span>
+
+
+                <h3>
+                    Build
+                </h3>
+
+
+                <p>
+                    Hands-on activity, engineering challenge,
+                    or dedicated project-team work.
+                </p>
+
+
+            </article>
+
+
+        </div>
+
+
     </div>
-   </section>
-   <section>
+
+</section>
+
+
+
+<!-- ==============================================================
+     ALL MEETING PHOTOS
+     ============================================================== -->
+
+<section class="meeting-photos-section">
+
     <div class="container">
-     <div class="gallery">
-      <img alt="Hands-on club activity" src="/assets/meeting-1.jpg"/>
-      <img alt="Club meeting" src="/assets/meeting-2.jpg"/>
-      <img alt="Students with a completed project" src="/assets/meeting-3.jpg"/>
-     </div>
-    </div>
-   </section>
 
-    <section id="meeting-updates-section" style="display:none">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <span class="eyebrow">Meeting updates</span>
-            <h2>Latest meeting information.</h2>
-          </div>
+
+        <div class="meeting-photo-heading">
+
+
+            <span class="eyebrow">
+                Photos
+            </span>
+
+
+            <h2>
+                Meeting photos
+            </h2>
+
+
         </div>
-        <div class="grid2">
-          <div class="card" id="meeting-content-card" style="display:none">
-            <h3>Meeting update</h3>
-            <p id="meeting-content-text" style="white-space:pre-wrap"></p>
-          </div>
-          <div class="card" id="meeting-minutes-card" style="display:none">
-            <h3>Meeting minutes</h3>
-            <p id="meeting-minutes-text" style="white-space:pre-wrap"></p>
-          </div>
+
+
+
+        <!--
+        ============================================================
+        IMPORTANT
+
+        ALL photos uploaded from:
+
+        Admin → Photos → Meetings
+
+        appear here.
+
+        There is NO separate static photo row anymore.
+        ============================================================
+        -->
+
+        <div
+            class="meeting-photo-grid"
+            data-photo-section="meetings"
+        >
+
+
+            <div class="empty-state public-photo-empty">
+
+                <h3>
+                    Loading photos...
+                </h3>
+
+            </div>
+
+
         </div>
-      </div>
-    </section>
 
-    <section>
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <span class="eyebrow">Photos</span>
-            <h2>Meeting photos.</h2>
-          </div>
+
+    </div>
+
+</section>
+
+
+
+</main>
+
+
+
+<!-- ==============================================================
+     FOOTER
+     ============================================================== -->
+
+<footer class="footer">
+
+    <div class="container footer-grid">
+
+
+        <div>
+
+            <strong style="color:white">
+                Sugar Code It
+            </strong>
+
+            <br>
+
+            Clements High School |
+            Sugar Land, Texas
+
         </div>
-        <div class="public-photo-grid" data-photo-section="meetings"></div>
-      </div>
-    </section>
-  </main>
-  <footer class="footer">
-   <div class="container footer-grid">
-    <div>
-     <strong style="color:white">
-      Sugar Code It
-     </strong>
-     <br/>
-     Clements High School | Sugar Land, Texas
+
+
+
+        <div>
+            Arduino | Coding | Engineering | Outreach
+        </div>
+
+
+
+        <div>
+            chssugarcodeit@gmail.com
+        </div>
+
+
     </div>
-    <div>
-     Arduino | Electrical | Biomedical | Engineering
-    </div>
-    <div>
-     chssugarcodeit@gmail.com
-    </div>
-   </div>
-  </footer>
-  <script src="/script.js">
-  </script>
-  <script>
-   fetch('/api/meeting-content.php', { cache: 'no-store' })
-    .then(function(response) {
-     return response.ok ? response.json() : {};
-    })
-    .then(function(data) {
-     var content = typeof data.content === 'string' ? data.content.trim() : '';
-     var minutes = typeof data.minutes === 'string' ? data.minutes.trim() : '';
 
-     if (!content && !minutes) {
-      return;
-     }
+</footer>
 
-     document.getElementById('meeting-updates-section').style.display = '';
 
-     if (content) {
-      document.getElementById('meeting-content-text').textContent = content;
-      document.getElementById('meeting-content-card').style.display = '';
-     }
 
-     if (minutes) {
-      document.getElementById('meeting-minutes-text').textContent = minutes;
-      document.getElementById('meeting-minutes-card').style.display = '';
-     }
-    })
-    .catch(function() {});
-  </script>
- </body>
+<!-- ==============================================================
+     NORMAL WEBSITE JAVASCRIPT
+
+     This loads the meeting photos from Admin.
+     ============================================================== -->
+
+<script src="/script.js?v=32"></script>
+
+
+</body>
+
 </html>
-
