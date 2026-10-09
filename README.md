@@ -1,77 +1,105 @@
-# Sugar Code It
+<p align="center">
+  <img src="assets/logo.png" alt="Sugar Code It logo" width="180">
+</p>
 
-Official website repository for Sugar Code It, a student-led STEM club at William P. Clements High School that teaches Arduino, programming, and engineering through hands-on projects.
+<h1 align="center">Sugar Code It</h1>
 
-**Live site:** [sugar-code-it.com](https://sugar-code-it.com)
+<p align="center">
+  <strong>A student-led STEM club at William P. Clements High School focused on Arduino, programming, engineering, and hands-on projects.</strong>
+</p>
+
+<p align="center">
+  <a href="https://sugar-code-it.com">Live site</a>
+</p>
+
+<p align="center">
+  <img alt="Club" src="https://img.shields.io/badge/type-student%20STEM%20club-blue">
+  <img alt="Arduino" src="https://img.shields.io/badge/focus-Arduino-00979D">
+  <img alt="Programming" src="https://img.shields.io/badge/focus-programming-4B8BBE">
+  <img alt="Engineering" src="https://img.shields.io/badge/focus-engineering-6A5ACD">
+</p>
 
 ![Sugar Code It homepage](assets/screenshot.png)
+
 ---
 
-## About the Club
+## Table of Contents
 
-Sugar Code It gives students a place to learn technical concepts and apply them right away. Meetings combine short lessons with project work, troubleshooting, and collaboration so members understand not only how something works, but how to build it themselves.
+- [Overview](#overview)
+- [What the Club Does](#what-the-club-does)
+- [Website Features](#website-features)
+- [Technology Stack](#technology-stack)
+- [My Role](#my-role)
+- [Privacy](#privacy)
+- [Repository Structure](#repository-structure)
 
-## About the Website
+---
 
-I built and maintain this site to keep the club's meetings, resources, projects, and updates organized in one place for current members and students interested in joining.
+## Overview
 
-### Features
+Sugar Code It gives students opportunities to learn technical concepts and apply them through hands-on projects. Meetings combine short lessons with project work, troubleshooting, and collaboration so members can understand both how something works and how to build it themselves.
 
-- **Calendar and meetings:** meeting dates, details, and attendance information
-- **Learning resources:** Arduino, electronics, and programming material
-- **Project pages:** engineering and bioengineering projects
-- **Impact and history:** club activities and past work
-- **Roadmap:** upcoming lessons and projects
-- **Join page:** information for prospective members
-- **Responsive design:** works across desktop and mobile devices
+The website keeps the club's meetings, learning resources, projects, and updates organized in one place for current members and students interested in joining.
 
-### Easy-to-update content
+**Club goals**
 
-Meetings, projects, and other updates are loaded dynamically through PHP endpoints and JSON data files, making it easier to update site content without rebuilding each page manually.
+- **Learn:** build understanding of programming, Arduino, electronics, and engineering fundamentals.
+- **Build:** apply technical concepts through hands-on projects and collaborative problem solving.
+- **Share:** support demonstrations, outreach, workshops, and other club activities.
 
-## Tech Stack
+---
 
-| Layer | Technology |
+## What the Club Does
+
+Sugar Code It combines technical instruction with project-based learning.
+
+Members work with topics such as:
+
+- Arduino programming
+- Electronics and circuits
+- Programming fundamentals
+- Sensors and hardware
+- Engineering design
+- Bioengineering projects
+- Project setup, testing, and troubleshooting
+
+Lessons are designed to give members enough technical background to understand the ideas behind a project before beginning hands-on work.
+
+---
+
+## Website Features
+
+**Club information**
+
+- Meeting dates and calendar information
+- Meeting details and attendance information
+- Club impact and past activities
+- Information for students interested in joining
+
+**Learning and projects**
+
+- Arduino, electronics, and programming resources
+- Engineering and bioengineering project pages
+- A roadmap for future lessons and projects
+
+**Website**
+
+- Responsive design for desktop and mobile
+- Dynamic content loaded through PHP endpoints and JSON data files
+- Public-facing club information separated from private administrative and student media files
+
+---
+
+## Technology Stack
+
+| Area | Technology |
 |---|---|
 | Front end | HTML, CSS, JavaScript |
 | Back end | PHP endpoints |
 | Data | JSON |
 | Version control | Git and GitHub |
 
-## Repository Structure
-
-```text
-api/            PHP endpoints used by the public website
-assets/         Public website assets
-data/           JSON files used for dynamic content
-
-index.html      Home page
-about.html      About the club
-calendar.html   Club calendar
-meetings.html   Meeting information
-learn.html      Learning resources
-projects.html   Club projects
-impact.html     Club impact and activity history
-roadmap.html    Future plans and project roadmap
-join.html       Information for students interested in joining
-
-styles.css      Shared styling
-script.js       Shared JavaScript
-```
-
-## Running Locally
-
-With PHP installed:
-
-```bash
-git clone https://github.com/mohidlatif/sugarcodeitclub.git
-cd sugarcodeitclub
-php -S localhost:8000
-```
-
-Then open `http://localhost:8000` in a browser.
-
-This public repository intentionally excludes administrative, authentication, and private-upload files, so functionality that depends on those components is not included in the local public version.
+---
 
 ## My Role
 
@@ -96,9 +124,36 @@ I was elected Vice President at the end of the 2025–26 school year and continu
 - Keep meeting, event, and calendar content current
 - Work with fellow officers and our faculty sponsor on technical documentation and member engagement
 
+---
+
 ## Privacy
 
-This repository contains only the public version of the website. Administrative files, authentication files, server configuration, logs, private uploads, and identifiable student photos are intentionally excluded to protect members' privacy.
+This repository contains the public version of the Sugar Code It website.
+
+Administrative files, authentication files, server configuration, logs, private uploads, and identifiable student photos are intentionally excluded.
+
+---
+
+## Repository Structure
+
+```text
+api/        PHP endpoints used by the public website
+assets/     Public website assets
+data/       JSON files used for dynamic content
+
+index.html      Home page
+about.html      About the club
+calendar.html   Club calendar
+meetings.html   Meeting information
+learn.html      Learning resources
+projects.html   Club projects
+impact.html     Club impact and activity history
+roadmap.html    Future plans and project roadmap
+join.html       Information for students interested in joining
+
+styles.css      Shared styling
+script.js       Shared JavaScript
+```
 
 ---
 
