@@ -3,6 +3,7 @@
 Official website repository for Sugar Code It, a student-led STEM club at William P. Clements High School that teaches Arduino, programming, and engineering through hands-on projects.
 
 **Live site:** [sugar-code-it.com](https://sugar-code-it.com)
+
 ![Sugar Code It homepage](assets/screenshot.png)
 ---
 
